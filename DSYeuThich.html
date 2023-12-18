@@ -5,38 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>DANH SÁCH YÊU THÍCH</title>
+    <link rel="stylesheet" href="CSS/DSYeuThich.css">
+     <!--Link Font -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+       <!--Link css header-->
+       <link rel="stylesheet" href="CSS/header.css">
+       <!--Link css footer-->
+       <link rel="stylesheet" href="CSS/footer.css">
 </head>
 
 <body>
-    <!----------HEADER---------->
-    <section>
-        <header class="header">
-            <div class="header-logo">
-                <a href="index.html"> <!--link trang chu-->
-                    <img src="./img/logo_ngan.png" width="100px" alt="Logo">
-                </a>
-            </div>
-            <nav class="navbar">
-                <a href="index.html" target="_self">TRANG CHỦ</a>
-                <a href="/HTML/DichVu.html" target="_self">DỊCH VỤ</a>
-                <a href="#sp">SẢN PHẨM</a>
-                <a href="#blog">TIN TỨC</a>
-                <a href="/HTML/LienHe.html" target="_self">LIÊN HỆ</a>
-            </nav>
-            <div class="icon">
-                <div class="fas fa-bars" id="menu"></div>
-                <div class="fas fa-search" id="search"></div>
+   <!----------HEADER---------->
+   <section>
+    <header class="header">
+        <div class="header-logo">
+            <a href="TrangChu.html"> 
+                <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+            </a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" target="_self">TRANG CHỦ</a>
+            <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+            <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+            <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+            <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+        </nav>
+        <div class="icon">
+            <div class="fas fa-bars" id="menu"></div>
+            <div class="fas fa-search" id="search"></div>
+            <a href="GioHang.html">
                 <div class="fas fa-shopping-cart" id="cart"></div>
-                <div class="fas fa-user" id="login"></div>
-            </div>
-            <form action="" class="search-form">
-                <input type="search" id="search-box" placeholder="Tìm kiếm...">
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
-        </header>
-    </section>
+            </a>
+            <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+        </div>
+        
+        <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+        <div class="login-options" id="loginOptions">
+            <a href="DangNhap.html">ĐĂNG NHẬP</a>
+            <a href="DangKy.html">ĐĂNG KÝ</a>
+            <a href="QuanTri.html">QUẢN TRỊ</a>
+        </div>
+        
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    </header>
+</section>
+<!----------END HEADER---------->
 
     <!--======  TRANG DANH SÁCH YÊU THÍCH ======-->
     <div class="app-content">
@@ -44,26 +60,7 @@
         <!--====== SECTION 1 ======-->
         <div class="u-s-p-y-60">
 
-            <!--====== NỘI DUNG THANH CẤU TRÚC SITE ======-->
-            <div class="section__content">
-                <div class="container">
-                    <div class="breadcrumb">
-                        <div class="breadcrumb__wrap">
-                            <ul class="breadcrumb__list">
-                                <li class="has-separator">
-
-                                    <a href="index.html">Trang chủ</a></li>
-                                <li class="is-marked">
-
-                                    <a href="wishlist.html">Danh sách yêu thích</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--====== Kết thúc - NỘI DUNG THANH CẤU TRÚC SITE ======-->
-
+        
 
         <!--====== SECTION 2 ======-->
         <div class="u-s-p-b-60">
@@ -98,7 +95,7 @@
                                     <div class="w-r__wrap-1">
                                         <div class="w-r__img-wrap">
 
-                                            <img class="u-img-fluid" src="./img/cham soc body.jpg" width="100px" alt="">
+                                            <img class="u-img-fluid" src="IMAGE/DSYeuThich/cham soc body.jpg" width="100px" alt="">
                                         </div>
                                         <div class="w-r__info">
 
@@ -131,7 +128,7 @@
                                     <div class="w-r__wrap-1">
                                         <div class="w-r__img-wrap">
 
-                                            <img class="u-img-fluid" src="./img/my pham.png" width="100px" alt=""></div>
+                                            <img class="u-img-fluid" src="IMAGE/DSYeuThich/my pham.png" width="100px" alt=""></div>
                                         <div class="w-r__info">
 
                                             <span class="w-r__name">
@@ -189,7 +186,7 @@
     <footer class="footer">
         <div class="block">
             <!--LOGO-->
-            <img width="100" src="./img/logo.png" alt="Logo">
+            <img width="100" src="IMAGE/logo.png" alt="Logo">
             <p>Genderless Spa - chuyên dịch vụ spa và các sản phẩm chăm sóc sắc đẹp tự nhiên.
             </p>
         </div>
@@ -207,3 +204,7 @@
             <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
         </div>
     </footer>
+</body>
+ <!--Link js header-->
+ <script src="JS/header.js"></script>
+ </html>
