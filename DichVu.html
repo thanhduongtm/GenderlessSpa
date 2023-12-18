@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dịch Vụ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!--Link Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <!-- Icon Mũi Tên -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="CSS/DichVu/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS của DỊCH VỤ YÊU THÍCH-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/DichVu/DichVu.css">
+    <!--Link css header-->
+    <link rel="stylesheet" href="CSS/header.css">
+    <!--Link css footer-->
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+       <!----------HEADER---------->
+       <section>
+        <header class="header">
+            <div class="header-logo">
+                <a href="TrangChu.html"> 
+                    <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" target="_self">TRANG CHỦ</a>
+                <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+                <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+                <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+                <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+            </nav>
+            <div class="icon">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="fas fa-search" id="search"></div>
+                <a href="GioHang.html">
+                    <div class="fas fa-shopping-cart" id="cart"></div>
+                </a>
+                <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+            </div>
+            
+            <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+            <div class="login-options" id="loginOptions">
+                <a href="DangNhap.html">ĐĂNG NHẬP</a>
+                <a href="DangKy.html">ĐĂNG KÝ</a>
+                <a href="QuanTri.html">QUẢN TRỊ</a>
+            </div>
+            
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </header>
+    </section>
+    <!----------END HEADER---------->
+    <!--=============ẢNH GIF NỀN DỊCH VỤ===================-->
+    <div class="gif">
+        <img width="100%" src="IMAGE/DichVu/nendv.gif" id="nendv">
+    </div>
+
+    <!--DỊCH VỤ YÊU THÍCH-->
+    <div class="dvyt">
+
+        <!--TIÊU ĐỀ DỊCH VỤ YÊU THÍCH-->
+        <div class="ten">
+            <h2>DỊCH VỤ YÊU THÍCH</h2> <hr>
+            <h2> <span>Tại Genderless Spa</span> </h2>
+            <p>Đến với Genderless Spa để trải nghiệm dịch vụ tốt nhất và tận hưởng khoảng thời gian thư giãn tuyệt vời
+            </p>
+        </div>
+
+        <!--==============================DỊCH VỤ YÊU THÍCH 1===========================-->
+        <div class="content">
+            <img class="imgdvyt"
+                src="https://hoamoctamanspa.vn/wp-content/uploads/2022/12/1-top-5-dia-diem-goi-dau-duong-sinh.jpg"
+                alt="duongsinh">
+            <h4>Gội Đầu Dưỡng Sinh Thảo Dược</h4>
+            <p>Sử Dụng Nguyên Liệu Có Nguồn Gốc Từ Thiên Nhiên Tốt Cho Tóc Da Đầu</p>
+            <h6>100.000đ</h6>
+            <!--ĐÁNH GIÁ DV1-->
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="used">(25)</i></li>
+            </ul>
+
+            <!--NÚT ĐẶT LỊCH-->
+            <div class="container">
+                <a href="LienHe.html#DatLich" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                        class="fa fa-shopping-bag me-2 text-primary"></i>Đặt lịch ngay</a>
+            </div>
+        </div>
+
+        <!--DỊCH VỤ YÊU THÍCH 2-->
+        <div class="content">
+            <img class="imgdvyt"
+                src="https://myphamdanaorla.vn/upload/elfinder/B%C3%A0i%20SEO/C%C3%A1ch%20t%E1%BA%A9y%20t%E1%BA%BF%20b%C3%A0o%20ch%E1%BA%BFt%20cho%20body/cach-tay-te-bao-chet-cho-body-2.jpg"
+                alt="tay tbc">
+            <h4>Tẩy Tế Bào Chết Toàn Thân</h4>
+            <p>Sử Dụng Tẩy Tế Bào Chết Làm Từ Loại Muối Mịn Cao Cấp Không Gây Rát Da</p>
+            <h6>450.000đ</h6>
+
+            <!--ĐÁNH GIÁ DV2-->
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="used">(31)</i></li>
+            </ul>
+
+            <!--NÚT ĐẶT LỊCH-->
+            <div class="container">
+                <a href="LienHe.html#DatLich" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                        class="fa fa-shopping-bag me-2 text-primary"></i>Đặt lịch ngay</a>
+            </div>
+        </div>
+
+        <!--DỊCH VỤ YÊU THÍCH 3-->
+        <div class="content">
+            <img class="imgdvyt" src="https://www.belasspa.com/Data/Sites/1/News/50/duong-da-bang-oxy-tinh-khiet-2.jpg"
+                alt="collagen">
+            <h4>Chăm Sóc Da Với Collagen & Elastin</h4>
+            <p>Collagen & Elastin là 2 chất cần thiết để có một làn da săn chắc & mịn màng</p>
+            <h6>420.000đ</h6>
+
+            <!--ĐÁNH GIÁ DV3-->
+            <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="used">(12)</i></li>
+            </ul>
+
+            <!--NÚT ĐẶT LỊCH-->
+            <div class="container">
+                <a href="LienHe.html#DatLich" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                        class="fa fa-shopping-bag me-2 text-primary"></i>Đặt lịch ngay</a>
+            </div>
+        </div>
+    </div>
+
+        <!--===========================DỊCH VỤ CHO DA MẶT=======================-->
+        <section>
+            <div class="container-fluid vesitable py-5">
+                <div class="container py-5">
+                    <h1 class="mb-0">DA MẶT</h1>
+                    <div class="owl-carousel vegetable-carousel justify-content-center">
+                        <!--=====================DỊCH VỤ MẶT 1 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <!--CSS nằm trong css/bootstrap.min.css-->
+                            <div class="vesitable-img"> <!--CSS nằm ở css/dichvu.css-->
+                                <img src="IMAGE/DichVu/face1.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="SUAN Balancing FACIAL">
+                            </div>
+
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Face</div>
+
+                            <div class="p-4 rounded-bottom"> <!--CSS nằm trong css/bootstrap.min.css-->
+                                <h4>SUAN Balancing FACIAL</h4>
+                                <p>Liệu pháp chuyên sâu, tái tạo làn da mất nước, giúp da mềm mại, mịn màng, trắng sáng
+                                    tự nhiên.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <!--CSS nằm trong css/bootstrap.min.css-->
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 1.080.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--=====================DỊCH VỤ MẶT 2 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/face2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Face</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>TIAN Calming FACIAL</h4>
+                                <p>Liệu pháp này hoàn hảo cho thư giãn, tác động lên toàn bộ bề mặt da, giúp gương mặt
+                                    thon gọn, rạng rỡ.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 980.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=====================DỊCH VỤ MẶT 3 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/face3.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Face</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>KU DETOXIFYING FACIAL </h4>
+                                <p>Liệu pháp làm sạch sâu, sử dụng sản phẩm Phytomer giúp loại bỏ tạp chất, làm dịu và
+                                    cân bằng độ ẩm tự nhiên.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 1.080.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i>Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=====================DỊCH VỤ MẶT 4 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/face4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Face</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>LA Rejuvenating FACIAL</h4>
+                                <p>Liệu pháp cân bằng da giúp làm giảm độ sâu của nếp nhăn, nuôi dưỡng và phụ hồi độ đàn
+                                    hồi của làm da.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 590.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <!--===========================DỊCH VỤ CHO DA CƠ THỂ=======================-->
+
+            <div class="container-fluid vesitable py-5">
+                <div class="container py-5">
+                    <h1 class="mb-0">CƠ THỂ</h1>
+                    <div class="owl-carousel vegetable-carousel justify-content-center">
+                        <!--=====================DỊCH VỤ CƠ THỂ 1 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <!--CSS nằm trong css/bootstrap.min.css-->
+                            <div class="vesitable-img"> <!--CSS nằm ở css/dichvu.css-->
+                                <img src="IMAGE/DichVu/body1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Body</div>
+                            <div class="p-4 rounded-bottom"> <!--CSS nằm trong css/bootstrap.min.css-->
+                                <h4>SUAN BALANCING JOURNEYS</h4>
+                                <p>Từ những lá chè xanh truyền thống giúp tẩy tế bào chết hiệu quả kết hợp liệu pháp
+                                    massage nhẹ nhàng giúp cơ thể sảng khoái, cân bằng và cải thiện các vấn đề về da.
+                                </p>
+                                <ul>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="used">(25)</i></li>
+                                </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <!--CSS nằm trong css/bootstrap.min.css-->
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 800.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--=====================DỊCH VỤ CƠ THỂ 2 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/body3.jpg" class="img-fluid w-100 rounded-top bg-light" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Body</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>DIAMOND CALMING WRAP </h4>
+                                <p>Liệu pháp cung cấp các khoáng chất giúp dưỡng ẩm, đồng thời thải độc nhẹ dịu, thúc
+                                    đẩy quá trình tái tạo và bảo vệ da.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 450.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i>Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=====================DỊCH VỤ CƠ THỂ 3 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/body4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Body</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>CHINESE ANGELICA DETOXIFYING WRAP</h4>
+                                <p>Trải nghiệm liệu pháp chuyên biệt từ rễ cây bạch chỉ, một loại thuốc bắc rất nổi
+                                    tiếng của Trung Quốc. Giúp thải độc, kháng viêm da, giảm suy nhược tim mạch...</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">60 phút <br> 450.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <!--===========================DỊCH VỤ CHO TÓC=======================-->
+
+            <div class="container-fluid vesitable py-5">
+                <div class="container py-5">
+                    <h1 class="mb-0">TÓC XINH</h1>
+                    <div class="owl-carousel vegetable-carousel justify-content-center">
+                        <!--=====================DỊCH VỤ TÓC 1 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <!--CSS nằm trong css/bootstrap.min.css-->
+                            <div class="vesitable-img"> <!--CSS nằm ở css/dichvu.css-->
+                                <img src="IMAGE/DichVu/hair1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Hair</div>
+                            <div class="p-4 rounded-bottom"> <!--CSS nằm trong css/bootstrap.min.css-->
+                                <h4>Gội Đầu Dưỡng Sinh - Gói Đông Y Cung Đình</h4>
+                                <p>Sử dụng các thành phần 100% đến từ thiên nhiên kết hợp cùng với các dụng cụ và các
+                                    bài massage bài bản.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <!--CSS nằm trong css/bootstrap.min.css-->
+                                    <p class="text-dark fs-5 fw-bold mb-0">90 phút <br> 100.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=====================DỊCH VỤ TÓC 2 ========================================-->
+                        <div class="border border-primary rounded position-relative vesitable-item">
+                            <div class="vesitable-img">
+                                <img src="IMAGE/DichVu/hair2.png" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                                style="top: 10px; right: 10px;">Hair</div>
+                            <div class="p-4 rounded-bottom">
+                                <h4>Phục Hồi Tóc - Công Nghệ Olapex</h4>
+                                <p>Công nghệ đã được cấp bằng sáng chế này hoạt động ở cấp độ phân tử để sửa chữa các
+                                    liên kết bị hư hỏng và đứt gãy trong tóc do tác hại của hóa chất, nhiệt và cơ học.</p>
+                                    <ul>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="fa fa-star checked"></i></li>
+                                        <li><i class="used">(25)</i></li>
+                                    </ul>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">120 phút <br> 1.500.000đ</p>
+                                    <a href="LienHe.html#DatLich"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                            class="fa fa-shopping-bag me-2 text-primary"></i> Đặt lịch ngay</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-----FOOTER----->
+    <footer class="footer">
+        <div class="block">
+            <!--LOGO-->
+            <img width="100" src="IMAGE/logo.png" alt="Logo">
+            <p>Genderless Spa - chuyên dịch vụ spa và các sản phẩm chăm sóc sắc đẹp tự nhiên.
+            </p>
+        </div>
+        <div class="block"> <!--LIÊN HỆ-->
+            <h3> LIÊN HỆ </h3>
+            <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản
+                Đà, Phường 11, Quận 5, Tp.HCM </a>
+            <a href="tel:0888 028 028"><i class="fas fa-phone"></i> 0888 028 028</a>
+            <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>
+        </div>
+        <div class="block"> <!--CHÍNH SÁCH-->
+            <h3> CHÍNH SÁCH </h3>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách mua hàng</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
+        </div>
+    </footer>
+    <!-----END FOOTER----->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="JS/DichVu.js"></script>
+    <!--Link js header-->
+    <script src="JS/header.js"></script>
+</body>
+
+</html>

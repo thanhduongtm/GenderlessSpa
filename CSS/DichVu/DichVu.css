@@ -1,0 +1,248 @@
+  /*-----DÙNG CHUNG CHO CẢ TRANG*/
+  body {
+      font-family: "Open Sans", sans-serif;
+  }
+
+  /*NÚT ĐẶT LỊCH*/
+  .container .btn {
+      margin-bottom: 20px;
+  }
+
+  .btn.border-secondary {
+      padding: 10px 25px;
+      border-radius: 5px;
+  }
+
+  /*khi di chuột vào "Nút Thêm vào giỏ" chuyển nền hồng, chữ trắng */
+  .btn.border-secondary:hover {
+      background: rgb(245, 201, 209) !important;
+      color: rgb(254, 254, 254) !important;
+  }
+
+  /*-END NÚT ĐẶT LỊCH*/
+
+  .content p,
+  .ten p,
+  .border .p-4 p {
+      text-align: center;
+      color: #c97a6a;
+      font-size: 1.3rem;
+      padding-top: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+
+
+  /*-----ẢNH GIF ĐẦU TRANG*/
+  #nendv {
+      width: 100%;
+      height: 80%;
+      margin-top: -10px;
+  }
+
+  /*-----END ẢNH GIF ĐẦU TRANG*/
+
+
+  /*LỚP TIÊU ĐỀ DỊCH VỤ YÊU THÍCH*/
+  .ten {
+      width: 25%;
+  }
+
+  /*-----DỊCH VỤ YÊU THÍCH-----*/
+  /*TIÊU ĐỀ TẠI GENDERLESS SPA*/
+  h2 {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: lighter;
+      color: #c97a6a;
+      font-size: 2.5rem;
+  }
+
+
+  /*TIÊU ĐỀ Đến với...*/
+  h4 {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      color: #9D5A4D;
+      text-transform: uppercase;
+      margin: 0;
+      padding-top: 10px;
+  }
+
+  /*Hiển thị bình thường nút Đặt lịch ngay*/
+  a {
+      text-decoration: none;
+  }
+
+  /*LỚP DỊCH VỤ YÊU THÍCH*/
+  .dvyt {
+      display: flex;
+      /*Hiển thị tp của lớp trong cùng 1 dòng*/
+      flex-wrap: wrap;
+      /*ND tự động xuống hàng nếu hết vị trí*/
+      width: 100%;
+      justify-content: space-evenly;
+      /*Điều chỉnh khoảng cách giữa các nd của lớp cách đều nhau theo chiều ngang*/
+      align-items: center;
+      /*Điều chỉnh vị trí các nd của lớp nằm giữa trang theo chiều dọc*/
+      margin: 30px 0;
+  }
+
+  /*LỚP NỘI DUNG TỪNG DV*/
+  .content {
+      width: 20%;
+      margin: 15px;
+      box-sizing: border-box;
+      /*chiều rộng, cao của width và height là chiều rộng, cao của 1 khối DV*/
+      float: left;
+      /*cố định nd bên trong nằm bên trái*/
+      text-align: center;
+      border-radius: 20px;
+      cursor: pointer;
+      /*hiển thị hình bàn tay khi rê con trỏ chuột*/
+      padding-top: 10px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px rgba(0, 0, 0, 0.1);
+      transition: .4s;
+      background: #ffd9cf68;
+  }
+
+  .content:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transform: translate(0px, -8px);
+  }
+
+  .content .imgdvyt {
+      border-radius: 20px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+  }
+
+  h6 {
+      font-size: 20px;
+      text-align: center;
+      color: #9D5A4D;
+      margin: 0;
+  }
+
+  ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+  }
+
+  li {
+      padding: 5px;
+      color: #9D5A4D;
+  }
+
+  .checked {
+      color: #FDB140;
+  }
+
+/*-----3 LOẠI DỊCH VỤ: DA MẶT,CƠ THỂ VÀ TÓC-----*/
+  h1 {
+    text-transform: uppercase; /*chuyển thành chữ hoa*/
+    letter-spacing: 1px;
+    color: #9D5A4D;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px;
+    margin-top: -100px;
+  }
+  
+  h1:after {
+    content: " ";
+    display: block;
+    width: 220px;
+    height: 1px;
+    background-color: #9D5A4D;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+
+/*Tạo bóng mờ khi di chuột vào ảnh*/
+ .vesitable-item:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+/*Hình ảnh phóng to trong khung ảnh, không bị tràn viền */
+.vesitable-img {
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+/*Phóng to 1.2 lần khi di chuột vào hình ảnh*/
+.vesitable-img img:hover {
+    transform: scale(1.2);
+}
+
+/*Khoảng cách giữa 2 nút mũi tên và ảnh cuộn*/
+ .owl-stage {
+    margin: 50px 0;
+    position: relative;
+}
+
+/*Nút mũi tên sang trái*/
+.owl-prev {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: rgb(20, 1, 4);
+    padding: 5px 25px;
+    border: 1px solid rgb(255, 130, 151);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+/*Nút mũi tên qua trái sẽ chuyển cam khi di chuột vào*/
+.owl-prev:hover {
+    background: rgb(245, 201, 209);
+    color: var(--bs-white);
+}
+
+/* nút mũi tên sang phải*/
+.owl-next {
+    position: absolute;
+    top: -8px;
+    right: 88px;
+    color: rgb(20, 1, 4);
+    padding: 5px 25px;
+    border: 1px solid rgb(255, 130, 151);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+/*Nếu xóa thì nguyên nền sẽ màu cam khi di chuột vào nút mũi tên */
+.owl-next:hover {
+    background: rgb(245, 201, 209);
+    color: var(--bs-white);
+}
+/*-----END 3 LOẠI DỊCH VỤ: DA MẶT,CƠ THỂ VÀ TÓC-----*/
+
+  /*HIỂN THỊ TRÊN ĐIỆN THOẠI*/
+  @media(max-width:1000px) {
+      .content {
+          width: 45%;
+      }
+  }
+
+  @media(max-width:768px) {
+      .content {
+          width: 100%;
+      }
+
+      .ten {
+          width: 75%;
+      }
+  }

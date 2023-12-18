@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <!--Link Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <!--Link icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Link css Trang Chu-->
+    <link rel="stylesheet" href="CSS/TrangChu.css">
+    <!--Link css header-->
+    <link rel="stylesheet" href="CSS/header.css">
+    <!--Link css footer-->
+    <link rel="stylesheet" href="CSS/footer.css">
+    <!--Link css feedback-->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+</head>
+
+<body>
+    <!----------HEADER---------->
+    <section>
+        <header class="header">
+            <div class="header-logo">
+                <a href="TrangChu.html">
+                    <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" target="_self">TRANG CHỦ</a>
+                <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+                <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+                <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+                <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+            </nav>
+            <div class="icon">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="fas fa-search" id="search"></div>
+                <a href="GioHang.html">
+                    <div class="fas fa-shopping-cart" id="cart"></div>
+                </a>
+                <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+            </div>
+
+            <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+            <div class="login-options" id="loginOptions">
+                <a href="DangNhap.html">ĐĂNG NHẬP</a>
+                <a href="DangKy.html">ĐĂNG KÝ</a>
+                <a href="QuanTri.html">QUẢN TRỊ</a>
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </header>
+    </section>
+    <!----------END HEADER---------->
+
+    <!-----SLIDER----->
+    <div class="slider-container">
+        <div class="slide">
+            <img width=100%; height=80%; src="IMAGE/TrangChu/1.png" alt="Image 1">
+            <div class="container">
+                <a href="#DatLich" class="btn"> ĐẶT LỊCH NGAY </a> <br> <br>
+            </div>
+        </div>
+        <div class="slide">
+            <img width=100% height=80%; src="IMAGE/TrangChu/2.png" alt="Image 2">
+            <div class="container">
+                <a href="SanPham.html" class="btn"> MUA NGAY </a> <br> <br>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <button class="prevBtn" onclick="changeSlide(-1)">&#60;</button>
+            <button class="nextBtn" onclick="changeSlide(1)">&#62;</button>
+        </div>
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+    </div>
+
+    <!-----END SLIDER----->
+
+    <!-----GIỚI THIỆU DỊCH VỤ VÀ SẢN PHẨM----->
+
+    <h1> Cung cấp các dịch vụ và sản phẩm </h1>
+    <div class="image-row">
+        <div class="img_text">
+            <img src="IMAGE/TrangChu/my pham.png" alt="mypham"></img>
+            <p>MỸ PHẨM</p>
+        </div>
+        <div class="img_text">
+            <img src="IMAGE/TrangChu/cham soc da mat.jpg" alt="damat"></img>
+            <p>CHĂM SÓC DA MẶT</p>
+        </div>
+        <div class="img_text">
+            <img src="IMAGE/TrangChu/cham soc body.jpg" alt="body"></img>
+            <p>CHĂM SÓC BODY</p>
+        </div>
+        <div class="img_text">
+            <img src="IMAGE/TrangChu/goi-dau.jpg" alt="goidau"></img>
+            <p>GỘI ĐẦU</p><br><br>
+        </div>
+    </div>
+    <div class="container">
+        <a href="DichVu.html" class="btn" target="_self">XEM NGAY</a><br><br>
+    </div>
+    <!-----END GIỚI THIỆU DỊCH VỤ VÀ SẢN PHẨM----->
+
+    <!-----HOTTTTTTTTT----->
+    <h1> CÔNG NGHỆ CHĂM SÓC DA ĐỘC QUYỀN </h1>
+    <section class="introduction-section">
+        <div class="image-container">
+            <img src="IMAGE/TrangChu/chamsocda.jpeg" alt="Hình ảnh giới thiệu">
+        </div>
+        <div class="text-container">
+            <h2>CHĂM SÓC DA VỚI COLLAGEN & ELASTIN</h2>
+            <p>
+                Dịch vụ chăm sóc da với collagen và elastin là một phương pháp chăm sóc da chuyên sâu nhằm cung cấp
+                dưỡng chất cần thiết để tái tạo và duy trì sự đàn hồi cho làn da. Collagen và elastin là hai loại
+                protein quan trọng giúp da giữ độ đàn hồi, độ săn chắc và ngăn chặn quá trình lão hóa.</p>
+                <div class="container">
+                    <a href="#DatLich" class="btn"> ĐẶT LỊCH NGAY </a>
+                </div>
+        </div>
+    </section>
+    <!-----END HOTTTTTTTTT----->
+
+    <!-----COMBO DỊCH VỤ----->
+    <h1> COMBO ĐƯỢC YÊU THÍCH NHẤT</h1>
+    <div class="service-container">
+        <!--COMBO1-->
+        <div class="service">
+            <h3 class="title"> Combo 1</h3>
+            <h3 class="price"> 490.000đ </h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Gội đầu thư giãn</li>
+                <li><i class="fas fa-check"></i>Detox - Làm sạch sâu</li>
+                <li><i class="fas fa-check"></i>Massage 10 bước mặt và cổ</li>
+                <li><i class="fas fa-check"></i>Lấy mụn vùng mặt</li>
+            </ul>
+            <div class="container">
+                <a href="#DatLich" class="btn"> ĐẶT LỊCH NGAY </a>
+            </div>
+        </div>
+        <!--COMBO2-->
+        <div class="service">
+            <h3 class="title"> Combo đặc biệt</h3>
+            <h3 class="price">
+                <span class="discount-price">690.000đ</span>
+                <span class="discounted">550.000đ</span>
+            </h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Tắm thuốc thảo dược</li>
+                <li><i class="fas fa-check"></i>Gội xả phục hồi tóc</li>
+                <li><i class="fas fa-check"></i>Massage trị liệu chuyên sâu</li>
+                <li><i class="fas fa-check"></i>Ngâm chân và tẩy da chết</li>
+            </ul>
+            <div class="container">
+                <a href="#DatLich" class="btn"> ĐẶT LỊCH NGAY </a>
+            </div>
+        </div>
+        <!--COMBO3-->
+        <div class="service">
+            <h3 class="title"> Combo 2</h3>
+            <h3 class="price"> 590.000đ </h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Gội đầu dưỡng sinh</li>
+                <li><i class="fas fa-check"></i>Chăm sóc da mặt</li>
+                <li><i class="fas fa-check"></i>Massage body</li>
+                <li><i class="fas fa-check"></i>Ngâm chân và tẩy da chết</li>
+            </ul>
+            <div class="container">
+                <a href="#DatLich" class="btn"> ĐẶT LỊCH NGAY </a>
+            </div>
+        </div>
+    </div>
+    <!-----END COMBO DỊCH VỤ----->
+
+    <!-----VỀ CHÚNG TÔI-->
+    <h1> VỀ CHÚNG TÔI</h1>
+    <div class="container-CSVC">
+        <div class="csvc">
+            <!--LOGO-->
+            <img src="IMAGE/TrangChu/bacsi.png" alt="Bacsi">
+            <p>
+                BÁC SĨ <em> <b> KINH NGHIỆM </b> </em> <br> <br>
+                Hơn 20 năm kinh nghiệm, luôn tận tâm, thấu hiểu, đáp ứng mọi nhu cầu làm đẹp.
+            </p>
+        </div>
+        <div class="csvc">
+            <!--LOGO-->
+            <img src="IMAGE/TrangChu/csvc4.png" alt="Maymoc">
+            <p>
+                THIẾT KẾ <em> <b> 5 SAO </b> </em> <br> <br>
+                Không gian thoái mái, sang trọng. Máy móc hiện đại, 100% nhập khẩu chính hãng.
+            </p>
+        </div>
+        <div class="csvc">
+            <!--LOGO-->
+            <img src="IMAGE/TrangChu/csvc2.png" alt="Maymoc">
+            <p>
+                TRẢI NGHIỆM <em> <b> TỐT NHẤT </b> </em> <br> <br>
+                Đội ngũ nhân viên với kỹ năng tốt sẽ làm bạn hài lòng khi sử dụng dịch vụ.
+            </p>
+        </div>
+    </div>
+    <!-----END VỀ CHÚNG TÔI----->
+
+    <!-----FEEDBACK VÀ ĐẶT LỊCH----->
+    <div class="container1">
+        <!----------FEEDBACK---------->
+        <div class="feedback">
+            <h1>KHÁCH HÀNG NÓI VỀ CHÚNG TÔI</h1>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!--FB1-->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+                                <div class="card-image">
+                                    <img src="IMAGE/TrangChu/fb1.png" alt=" " class="card-img">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <button class="button"> Tiktoker Lou Lê</button>
+                                <p class="description"> Hôm nay mình được trải nghiệm gội đầu dưỡng sinh ở Genderless
+                                    rất thoải mái, mọi người nên đi cùng người thân để relax cuối tuần nhé.
+                                </p>
+                            </div>
+                        </div>
+                        <!--FB2-->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+                                <div class="card-image">
+                                    <img src="IMAGE/TrangChu/fb2.png" alt=" " class="card-img">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <button class="button"> Tiktoker Phương Min</button>
+                                <p class="description"> Cực kì thích massage ở Genderless. Nhân viên tay nghề cao, không
+                                    gian rộng rãi thoải mái. Rất thích hợp để đến thư giãn sau những ngày làm việc mệt
+                                    mỏi.
+                                </p>
+                            </div>
+                        </div>
+                        <!--FB3-->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+                                <div class="card-image">
+                                    <img src="IMAGE/TrangChu/fb3.png" alt=" " class="card-img">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <button class="button"> Trucquynhjunmi</button>
+                                <p class="description"> Genderless có cơ sở vật chất khá xịn xò, nhân viên dễ thương
+                                    nhiệt tình với khách và cả con của khách. Mình sẽ thường xuyên ghé spa.
+                                </p>
+                            </div>
+                        </div>
+                        <!--FB4-->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+                                <div class="card-image">
+                                    <img src="IMAGE/TrangChu/fb4.png" alt=" " class="card-img">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <button class="button"> Thu Nhi Eat Clean</button>
+                                <p class="description"> Nếu bạn thường bị mệt mỏi hay stress hãy thử gội đầu dưỡng sinh
+                                    đi, mình thấy ổn lắm, mấy chị nhân viên cũng nhiệt tình.
+                                </p>
+                            </div>
+                        </div>
+                        <!--FB5-->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"> </span>
+                                <div class="card-image">
+                                    <img src="IMAGE/TrangChu/fb5.png" alt=" " class="card-img">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <button class="button"> Tiktoker Vy Phạm</button>
+                                <p class="description"> Nay Vy đến Genderless gội đầu thảo dược cực chill. Trước giờ Vy
+                                    chưa thấy tiệm nào không gian thoải mái như vậy, rất muốn ngủ luôn hihi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!----------FORM ĐẶT LỊCH---------->
+
+        <div class="booking-form">
+            <h1 id="DatLich" style="width:100%;">ĐẶT LỊCH NGAY</h1>
+            <form class="booking-form">
+                <div class="form-row">
+                    <input type="text" id="full-name" name="full-name" placeholder="Nhập họ và tên">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="email" name="email" placeholder="Nhập địa chỉ email">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="service-name" name="service-name" placeholder="Nhập tên dịch vụ">
+                </div>
+                <div class="form-row">
+                    <input type="date" id="appointment-date" name="appointment-date" placeholder="Chọn ngày hẹn">
+                </div>
+                <div class="form-row">
+                    <input type="time" id="appointment-time" name="appointment-time" placeholder="Chọn thời gian">
+                </div>
+                <div style="width:104%; " class="form-row">
+                    <input type="submit" value="GỬI">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-----END FEEDBACK VÀ ĐẶT LỊCH----->
+
+    <!-----FOOTER----->
+    <footer class="footer">
+        <div class="block">
+            <!--LOGO-->
+            <img width="100" src="IMAGE/logo.png" alt="Logo">
+            <p>Genderless Spa - chuyên dịch vụ spa và các sản phẩm chăm sóc sắc đẹp tự nhiên.
+            </p>
+        </div>
+        <div class="block"> <!--LIÊN HỆ-->
+            <h3> LIÊN HỆ </h3>
+            <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản Đà,
+                Phường 11, Quận 5, Tp.HCM </a>
+            <a href="tel:0888 028 028"><i class="fas fa-phone"></i> 0888 028 028</a>
+            <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>
+        </div>
+        <div class="block"> <!--CHÍNH SÁCH-->
+            <h3> CHÍNH SÁCH </h3>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách mua hàng</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
+        </div>
+    </footer>
+    <!-----END FOOTER----->
+
+</body>
+<!--Swiper JS-->
+<script src="JS/swiper-bundle.min.js"> </script>
+<!--Link js feedback-->
+<script src="JS/feedback.js"></script>
+<!--Link js header-->
+<script src="JS/header.js"></script>
+
+<script src="JS/script.js"></script>
+
+</html>

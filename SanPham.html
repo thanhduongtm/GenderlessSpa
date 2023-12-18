@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <!--====== Vendor Css ======-->
+    <link rel="stylesheet" href="CSS/SanPham/vendo.css">
+    <!--====== App ======-->
+    <link rel="stylesheet" href="CSS/SanPham/SanPham.css">
+    <link rel="stylesheet" href="CSS/SanPham/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+    <!----------HEADER---------->
+    <section>
+        <header class="header">
+            <div class="header-logo">
+                <a href="TrangChu.html">
+                    <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" target="_self">TRANG CHỦ</a>
+                <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+                <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+                <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+                <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+            </nav>
+            <div class="icon">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="fas fa-search" id="search"></div>
+                <a href="GioHang.html">
+                    <div class="fas fa-shopping-cart" id="cart"></div>
+                </a>
+                <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+                <div class="fas fa-filter" id="filter"></div>
+            </div>
+            <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+            <div class="login-options" id="loginOptions">
+                <a href="DangNhap.html">ĐĂNG NHẬP</a>
+                <a href="DangKy.html">ĐĂNG KÝ</a>
+                <a href="QuanTri.html">QUẢN TRỊ</a>
+            </div>
+
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </header>
+    </section>
+    <!--========================== BỘ LỌC ==========================-->
+    <div class="u-s-p-y-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="shop-w-master">
+                        <h1 class="shop-w-master__heading u-s-m-b-30"><i class="fas fa-filter u-s-m-r-8"></i>
+                            <span>Bộ lọc</span>
+                        </h1>
+                        <div class="shop-w-master__sidebar sidebar--bg-snow">
+                            <!-- Phân loại sản phẩm -->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">Phân loại</h1>
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-category"
+                                            data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-category">
+                                        <ul class="shop-w__category-list gl-scroll">
+                                            <li class="has-list">
+
+                                                <a href="#">Mặt nạ </a>
+
+                                                <span class="category-list__text u-s-m-l-6">(23)</span>
+
+                                                <span
+                                                    class="js-shop-category-span is-expanded fas fa-plus u-s-m-l-6"></span>
+                                                <ul style="display:block">
+                                                    <li class="has-list">
+
+                                                        <a href="#">Mặt nạ đất sét</a>
+
+                                                        <span
+                                                            class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+
+                                                                <a href="#">Mặt nạ trà xanh</a>
+                                                            </li>
+                                                            <li>
+
+                                                                <a href="#">Mặt nạ hoa cúc</a>
+                                                            </li>
+                                                            <li>
+
+                                                                <a href="#">Mặt nạ ngải cứu</a>
+                                                            </li>
+                                                            <li>
+
+                                                                <a href="#">Mặt nạ đá tro</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="has-list">
+
+                                                        <a href="#">Dụng cụ</a>
+
+                                                        <span
+                                                            class="js-shop-category-span fas fa-plus u-s-m-l-6"></span>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Cọ quét</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Que nhựa</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Combo 6 món</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Đánh giá -->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">Đánh giá</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-rating"
+                                            data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-rating">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(15)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>trở lên</span>
+                                                    </div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(20)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                            class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>trở lên</span>
+                                                    </div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(25)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i
+                                                            class="fas fa-star"></i><i class="far fa-star"></i><i
+                                                            class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>trở lên</span>
+                                                    </div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(30)</span>
+                                            </li>
+                                            <li>
+                                                <div class="rating__check">
+
+                                                    <input type="checkbox">
+                                                    <div class="rating__check-star-wrap"><i class="fas fa-star"></i><i
+                                                            class="far fa-star"></i><i class="far fa-star"></i><i
+                                                            class="far fa-star"></i><i class="far fa-star"></i>
+
+                                                        <span>trở lên</span>
+                                                    </div>
+                                                </div>
+
+                                                <span class="shop-w__total-text">(31)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- giao hàng -->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">Giao hàng</h1>
+
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-shipping"
+                                            data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-shipping">
+                                        <ul class="shop-w__list gl-scroll">
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="shipping">Giao hàng
+                                                            nhanh</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="check-box">
+                                                    <input type="checkbox" id="shipping">
+                                                    <div class="check-box__state check-box__state--primary">
+                                                        <label class="check-box__label" for="shipping">Giao hàng tiết
+                                                            kiệm</label>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Giá tiền-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">Giá tiền</h1>
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-price"
+                                            data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-price">
+                                        <form class="shop-w__form-p">
+                                            <div class="shop-w__form-p-wrap">
+                                                <div>
+                                                    <label for="price-min"></label>
+                                                    <input class="input-text input-text--primary-style" type="text"
+                                                        id="price-min" placeholder="Tối thiểu">
+                                                </div>
+                                                <div>
+                                                    <label for="price-max"></label>
+                                                    <input class="input-text input-text--primary-style" type="text"
+                                                        id="price-max" placeholder="Tối đa">
+                                                </div>
+                                                <div>
+                                                    <button
+                                                        class="btn btn--icon fas fa-angle-right btn--e-transparent-platinum-b-2"
+                                                        type="submit"></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Thương hiệu-->
+                            <div class="u-s-m-b-30">
+                                <div class="shop-w">
+                                    <div class="shop-w__intro-wrap">
+                                        <h1 class="shop-w__h">Thương hiệu</h1>
+                                        <span class="fas fa-minus shop-w__toggle" data-target="#s-manufacturer"
+                                            data-toggle="collapse"></span>
+                                    </div>
+                                    <div class="shop-w__wrap collapse show" id="s-manufacturer">
+                                        <ul class="shop-w__list-2">
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox" checked>
+                                                    <span>Kiehl's</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(23)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox">
+                                                    <span> Innisfree</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(15)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox">
+                                                    <span>Re:p</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(15)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox">
+                                                    <span>Some By Mi</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(9)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox">
+                                                    <span>Skintific</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(3)</span>
+                                            </li>
+                                            <li>
+                                                <div class="list__content">
+                                                    <input type="checkbox">
+                                                    <span>Dr.Ceuracle</span>
+                                                </div>
+                                                <span class="shop-w__total-text">(3)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--======================= SẮP XẾP =============================-->
+                <div class="col-lg-9 col-md-12">
+                    <div class="shop-p">
+                        <div class="shop-p__toolbar u-s-m-b-30">
+                            <div class="shop-p__meta-wrap u-s-m-b-60">
+                                <form>
+
+                                    <div class="u-s-m-b-8"><select class="select-box select-box--transparent-b-2">
+                                            <option selected>Sắp xếp: Sản phẩm mới </option>
+                                            <option>Sắp xếp: Sản phẩm bán chạy</option>
+                                            <option>Sắp xếp: Sản phẩm đánh giá cao</option>
+                                            <option>Sắp xếp: Giá rẻ</option>
+                                            <option>Sắp xếp: Giá cao</option>
+                                        </select></div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--========================= SẢN PHẨM ===========================-->
+                    <div class="shop-p__collection">
+                        <div class="row is-grid-active">
+                            <!--================================================SẢN PHẨM 1==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/innisfree.jpg"
+                                                alt="Mặt nạ đát sét Innisfree"></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt nạ Innisfree Super Volcanic Pore Clay</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-m__review">(8)</span>
+                                        </div>
+                                        <div class="product-m__price">324.000đ
+
+                                            <span class="product-m__discount">360.000đ</span>
+                                        </div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Thành phần chứa tro núi lửa đảo Jeju + bột vỏ quả óc chó và AHA có
+                                                    tác dụng làm sạch tế bào chết, làm sạch bã nhờn, dầu thừa, làm sạch
+                                                    sâu và cải thiện vấn đề về lỗ chân lông...</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 2==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/kiehls-face-mask.jpg"
+                                                alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét </a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt nạ Kiehl's Rare Earth Deep Pore Cleansing
+                                                Masque</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-m__review">(5)</span>
+                                        </div>
+                                        <div class="product-m__price">950.000đ
+                                            <span class="product-m__discount">1050.000đ</span>
+                                        </div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Dành cho mọi loại da, kể cả da nhạy cảm. Mặt nạ đất sét giúp làm
+                                                    sạch da, loại bỏ tạp chất và se khít lỗ chân lông.</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 3==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/rep.png" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét </a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt Nạ Hoa Cúc Re:p Bio Fresh Mask With Real
+                                                Calming</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-m__review">(5)</span>
+                                        </div>
+
+                                        <div class="product-m__price">399.000đ
+                                            <span class="product-m__discount">710.000đ</span>
+                                        </div>
+
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Thành phần trắng chứa đất sét trắng vùng núi lửa Hawaii giúp hút
+                                                    sạch mọi bụi bẩn, bã nhờn,..giảm tình trạng mụn cám, mụn đầu đen.
+                                                    Ngoài ra chứa chiết xuất hoa cúc giúp làm dịu da kích ứng hiệu
+                                                    quả.</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--================================================SẢN PHẨM 4==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/sombymi.webp" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt nạ Some By Mi Super Matcha Pore Clean Clay
+                                                Mask</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-m__review">(1)</span>
+                                        </div>
+
+                                        <div class="product-m__price">263.000đ
+                                            <span class="product-m__discount">405.000đ</span>
+                                        </div>
+
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span> Chứa các chiết xuất từ trà xanh, nước tinh khiết, lá cây,...lành
+                                                    tính giúp bổ sung BHA nhẹ nhàng, làm sạch lớp da chết, làm dịu làn
+                                                    da hiệu quả giúp da trở nên mềm mại và mịn màng hơn.</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--================================================SẢN PHẨM 5==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/skintific.webp" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt Nạ Hỗ Trợ Giảm Mụn Skintific Chiết Xuất
+                                                Ngải Cứu </a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+
+                                            <span class="product-m__review">(5)</span>
+                                        </div>
+
+                                        <div class="product-m__price">141.000đ
+                                            <span class="product-m__discount">202.000đ</span>
+                                        </div>
+
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Chứa chiết xuất Ngải cứu chất lượng nhất giúp ngừa mụn cho làn da
+                                                    sáng và tươi sáng hơn. </span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 6==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/Dr.Ceuracle.webp" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ đất sét</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt nạ Dr.Ceuracle Jeju Matcha Clay Pack</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-m__review">(8)</span>
+                                        </div>
+
+                                        <div class="product-m__price">449.000đ
+                                            <span class="product-m__discount">630.000đ</span>
+                                        </div>
+
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Thành phần chứa chiết xuất trà xanh từ đảo Jeju giàu chất chống
+                                                    oxy hóa cùng đất sét tự nhiên giúp làm sạch sâu, se khít lỗ chân
+                                                    lông.</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 7==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/SET1.webp" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Dụng cụ </a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Bộ Dụng Cụ Bằng Nhựa Cao Cấp LMLTOP Mask
+                                                Bowl</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-m__review">(5)</span>
+                                        </div>
+                                        <div class="product-m__price">29.000đ</div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span>Đến từ thương hiệu LMLTOP gồm muỗng đong, bát trộn và cọ phết mặt
+                                                    nạ, cọ tán bột giúp công việc pha hỗn hợp mặt nạ chuyên dùng của bạn
+                                                    trở nên dễ dàng hơn</span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 8==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/coquet.webp" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Dụng cụ</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Cọ Quét Mặt Nạ Silicon Cao Cấp</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i>
+
+                                            <span class="product-m__review">(10)</span>
+                                        </div>
+                                        <div class="product-m__price">18.000đ
+
+                                            <span class="product-m__discount">20.000đ</span>
+                                        </div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span></span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--================================================SẢN PHẨM 9==================================-->
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product-m">
+                                    <div class="product-m__thumb">
+
+                                        <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                            href="CTSanPham.html">
+
+                                            <img class="aspect__img" src="IMAGE/imgSanPham/senka.jpg" alt=""></a>
+
+                                        <div class="product-m__add-cart">
+
+                                            <a class="btn--e-brand" data-modal="modal" data-modal-id="#add-to-cart">Thêm
+                                                vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-m__content">
+                                        <div class="product-m__category">
+
+                                            <a href="shop-side-version-2.html">Mặt nạ</a>
+                                        </div>
+                                        <div class="product-m__name">
+
+                                            <a href="CTSanPham.html">Mặt nạ Senka Perfect Aqua White Mask Extra
+                                                White</a>
+                                        </div>
+                                        <div class="product-m__rating gl-rating-style"><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+
+                                            <span class="product-m__review">(100)</span>
+                                        </div>
+                                        <div class="product-m__price">15.000đ
+
+                                            <span class="product-m__discount">30.000đ</span>
+                                        </div>
+                                        <div class="product-m__hover">
+                                            <div class="product-m__preview-description">
+
+                                                <span></span>
+                                            </div>
+                                            <div class="product-m__wishlist">
+
+                                                <a class="far fa-heart" href="#" data-tooltip="tooltip"
+                                                    data-placement="top" title="Add to Wishlist"> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="u-s-p-y-60">
+
+        <!--=========================== PHÂN TRANG=====================-->
+        <ul class="shop-p__pagination">
+            <li class="is-active">
+
+                <a href="SanPham.html">1</a>
+            </li>
+            <li>
+
+                <a href="SanPhamtieptheo.html">2</a>
+            </li>
+            <li>
+
+                <a class="fas fa-angle-right" href="SanPham.html"></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-----FOOTER----->
+    <footer class="footer">
+        <div class="block">
+            <!--LOGO-->
+            <img width="100" src="IMAGE/logo.png" alt="Logo">
+            <p>Genderless Spa - chuyên dịch vụ spa và các sản phẩm chăm sóc sắc đẹp tự nhiên.
+            </p>
+        </div>
+        <div class="block"> <!--LIÊN HỆ-->
+            <h3> LIÊN HỆ </h3> <br>
+            <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản Đà, Phường 11, Quận 5, Tp.HCM </a>
+            <a href="tel:0888 028 028"><i class="fas fa-phone"></i> 0888 028 028</a>
+            <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>            
+        </div>
+        <div class="block"> <!--CHÍNH SÁCH-->
+            <h3> CHÍNH SÁCH </h3> <br>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách mua hàng</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
+        </div>
+    </footer>
+    <!-----END FOOTER----->
+
+    <!--====== GẮN LINK JAVASCRIPTS ======-->
+    <!--====== Vendor Js ======-->
+    <script src="JS/SanPham/vendo.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <script src="JS/SanPham/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <script src="JS/SanPham/SanPham.js"></script>
+    <script src="JS/SanPham/header.js"></script>
+</body>
+
+</html>

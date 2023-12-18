@@ -1,0 +1,476 @@
+
+/*----------SỬ DỤNG NHIỀU----------*/
+body {
+  font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+  text-transform: uppercase; /*chuyển thành chữ hoa*/
+  letter-spacing: 1px;
+  color: #9D5A4D;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+h1:after {
+  content: " ";
+  display: block;
+  width: 220px;
+  height: 1px;
+  background-color: #9D5A4D;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+/*-----NÚT ĐẶT LỊCH, XEM NGAY, ... -----*/
+/*căn giữa*/
+.container {
+  text-align: center;
+}
+
+/*style khối*/
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+  background-color: #D8A19E;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s;
+}
+
+/*hiệu ứng đổi màu khi di chuột đến*/
+.btn:hover,
+.btn:active {
+  background-color: #b66e59;
+}
+/*-----SLIDER-----*/
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto; /*margin top và bottom là 0, left và right là auto. giúp căn giữa slider*/
+}
+
+/*Chỉnh dấu mũi tên*/
+.slider-container .navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.slider-container .navigation .prevBtn, .nextBtn {
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #D8A19F ;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.slider-container .navigation .prevBtn {
+  position: absolute;
+  left: 10px;
+}
+
+.slider-container .navigation .nextBtn {
+  position: absolute;
+  right: 10px;
+}
+
+/*Định dạng chấm tròn khi chuyển slider*/
+.slider-container .dots-container {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.slider-container .dots-container .dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-container .dots-container .dot.active {
+  background-color: #D8A19F;
+}
+/*-----END SLIDER-----*/
+
+/*-----GIỚI THIỆU DỊCH VỤ VÀ SẢN PHẨM-----*/
+.image-row {
+  display: flex; /* Sử dụng flexbox để sắp xếp các hình ảnh và văn bản */
+  justify-content: space-around; /* Căn các phần tử theo chiều ngang */
+  flex-wrap: wrap; /* Cho phép tự động xuống dòng khi cần */
+}
+
+.img_text {
+  position: relative;
+  text-align: center;
+  margin: 10px 10px;
+  flex: 1; /* Phần tử co dãn để đảm bảo chúng đều có chiều rộng tương đối nhau */
+}
+.img_text img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: -20px -10px 0px 0px #D8A19E;
+  margin: 5px;
+  transition: filter 0.5s ease;
+  /* Hiệu ứng mờ */
+}
+.img_text p {
+  opacity: 0;
+  color: white;
+  background-color: #D8A19E;
+  border-radius: 5px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+  /* Hiệu ứng hiển thị văn bản */
+}
+
+.img_text:hover img {
+  filter: blur(3px);
+  /* Làm mờ hình ảnh khi di chuột vào */
+}
+
+.img_text:hover p {
+  opacity: 1;
+  /* Hiển thị văn bản khi di chuột vào */
+}
+
+/*----------CÔNG NGHỆ ĐỘC QUYỀN----------*/
+.introduction-section {
+  display: flex;
+  align-items: center; /* Giữ nội dung ở trung tâm dọc của section */
+}
+
+.image-container {
+  width: 40%;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:brown;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color:#b66e59;
+}
+
+/* Thêm media query cho màn hình có kích thước nhỏ (vd: điện thoại) */
+@media (max-width: 767px) {
+  .introduction-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+/*----------END CÔNG NGHỆ ĐỘC QUYỀN----------*/
+
+
+/*----------COMBO DỊCH VỤ----------*/
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;  
+}
+
+/*Điều chỉnh khung của từng combo*/
+.service-container .service {
+  width: 30rem;
+  text-align: center;
+  background-color: #f7f0ed;
+  color: black;
+  margin: 0 1rem;
+}
+
+/*Điều chỉnh khung của từng combo khi di chuột đến*/
+.service-container .service:hover{
+  transform: scale(1.06); 
+}
+
+/*Điều chỉnh BG tiêu đề*/
+.service-container .service .title {
+  font-size: 2.5rem;
+   background: #D8A19E;
+   clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+   /*Tạo hình dạng cho phần tử title bằng cách cắt bớt phần tử theo
+   đường dạng polygon có tọa độ các đỉnh như trong đoạn code*/
+   color: #fff ;
+   padding:1rem 0;
+}
+
+/*Điều chỉnh giá*/
+.service-container .service .price {
+  font-size: 2.5rem;
+   color:brown;
+   padding-top:.5rem;
+}
+
+/*Giá trước khi giảm*/
+.service-container .service .price .discount-price {
+  color: brown;
+  text-decoration: line-through;
+}
+/*Giá sau khi giảm*/
+.service-container .service .price .discounted {
+  color:crimson;
+}
+.service-container .service li {
+  text-align: left;
+   padding:.5rem; /*khoảng cách là 0.5rem*/
+   font-size: 1.5rem;
+   color: black;
+   list-style: none; /*xoá chấm tròn*/
+}
+
+/*Điều chỉnh các phần tử trong i (icon)*/
+.service-container .service ul li i{
+  color: white;
+  padding: .5rem;
+  margin-right: 1rem;
+  background:#D8A19E;
+  border-radius: 50%;
+}
+
+/*Điều chỉnh các phần tử trong li (các dịch vụ trong gói)*/
+.box-container .box ul li{
+   text-align: left;
+   padding:.5rem; /*khoảng cách là 0.5rem*/
+   font-size: 1.5rem;
+   color: black;
+}
+/*----------END COMBO DỊCH VỤ----------*/
+
+/*----------VỀ CHÚNG TÔI----------*/
+.container-CSVC {
+  background-color: #EDE1DE;
+  padding: 20px 50px 10px 50px; 
+  display: flex; /* Thiết lập hiển thị flexbox để quản lý layout */
+  justify-content: space-around; /* Căn giữa các phần tử con và phân bố cân đối khoảng trắng xung quanh */
+  flex-wrap: wrap; /* không đủ sẽ xuống dòng*/
+}
+
+.container-CSVC .csvc {
+  width: 25%; 
+  padding: 10px;
+  text-align: center; /* Căn giữa nội dung trong block */
+}
+
+.container-CSVC .csvc img {
+  text-align: center;
+  width: 100%;
+}
+
+.container-CSVC .csvc p {
+font-size: 1.4rem;
+color:#9D5A4D;
+}
+/*----------END VỀ CHÚNG TÔI----------*/
+
+/*----------SECTION FEEDBACK + ĐẶT LỊCH----------*/
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback {
+  flex: 1 0 50%; /* Khối phản hồi chiếm 50% trên màn hình lớn */
+}
+
+.booking-form {
+  flex: 1 0 50%; /* Khối form đặt lịch chiếm 50% trên màn hình lớn */
+}
+
+
+/*----------FEEDBACK----------*/
+
+.slide-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.slide-content {
+  margin: 0 40px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #F0D9D3;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #D8A19E;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #D8A19E;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #F0D9D3;
+}
+/*hình của khách*/
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #D8A19E;
+}
+
+/*icon ngôi sao*/
+.card .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #FFB90F;
+  text-align: center;
+}
+
+/*mô tả feedback của khách hàng*/
+.description {
+  font-size: 14px;
+  color: #9D5A4D;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #D8A19E;
+  border-radius: 6px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/*----------FORM ĐẶT LỊCH----------*/
+      .booking-form {
+          max-width: 800px;
+          width: 70%;
+          margin: 0 auto;
+      }
+
+      .form-row {
+          margin-bottom: 25px;
+      }
+
+      input {
+          width: calc(100% - 10px);
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color:rgb(from 244 230 230 100%);
+      }
+
+      input[type="submit"] {
+          background-color: #9D5A4D;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 10px;
+          cursor: pointer;
+          align-items:center ;
+      }
+/*----------END SECTION FEEDBACK + ĐẶT LỊCH----------*/
+
+/* Media query cho hiển thị trên điện thoại */
+@media (max-width: 768px) {
+  .service, .block, .feedback, .booking-form, .container-CSVC .csvc, .image-row
+  {
+    width: 100%;
+  }
+}
+/* Media query cho màn hình nhỏ hơn 600px */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Chuyển sang kiểu dạng cột */
+    align-items: stretch; /* Mở rộng chiều rộng của các phần tử theo chiều ngang */
+  }
+}

@@ -1,0 +1,656 @@
+body {
+    font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+:root {
+    --pink: #c97a6a;
+    --nau: #9D5A4D;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(1, 1, 1, .1);
+    --border: .2rem solid rgba(1, 1, 1, .1);
+    --outline: .1rem solid rgba(1, 1, 1, .1);
+    --outline-hover: .2rem solid var(--nau);
+}
+
+section {
+    padding: 55px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /*Hiển thị chữ cái đầu tiên của mỗi từ là chữ in hoa*/
+    transition: all .2s linear;
+    /*Hiệu ứng chuyển động với tg là 0.2s và kiểu là linear*/
+    position: fixed;
+    /*Phần tử được giữ ở một vị trí cố định trên màn hình.*/
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+/*--Điều chỉnh chữ trên thanh menu*/
+.header .navbar a {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    color: var(--pink);
+    text-decoration: none;
+}
+
+/*--Điều chỉnh chữ trên thanh menu sau khi di chuột đến*/
+.header .navbar a:hover {
+    color: var(--nau);
+    border-bottom: 2px solid var(--nau);
+    /*gạch chân ở dưới chữ*/
+}
+
+/*--Điều chỉnh icon*/
+.header .icon div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--nau);
+    font-size: 2rem;
+    margin-right: .3rem;
+    cursor: pointer;
+    /*khi di chuột đến sẽ đổi thành ngón tay: thể hiện có thể nhấp vào*/
+    text-align: center;
+}
+
+/*--Điều chỉnh icon sau khi di chuột đến*/
+.header .icon div:hover {
+    background: var(--pink);
+    color: #fff;
+
+}
+
+#menu {
+    display: none;
+    /*phần tử id này không hiển thị trên giao diện máy tính*/
+}
+
+/*--Điều chỉnh search form*/
+.header .search-form {
+    position: absolute;
+    /* Thiết lập vị trí tuyệt đối cho phần tử */
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    /* Đặt màu nền */
+    border-radius: .5rem;
+    /* Đặt góc bo tròn */
+    overflow: hidden;
+    /* Ẩn bớt nội dung vượt ra khỏi khung */
+    display: flex;
+    /* Sử dụng flexbox để quản lý layout */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    box-shadow: var(--box-shadow);
+    /* Hiệu ứng bóng đổ  */
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+    /*Hiệu ứng chuyển động với tg là 0.4s và kiểu là linear (đồng đều) */
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--nau);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--nau);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--pink);
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu {
+        display: inline-block;
+    }
+
+    .header .search-form {
+        width: 90%;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+}
+
+
+/*----------FOOTER----------*/
+.footer {
+    background-color: #F0D9D3;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    /* Khoảng cách nội dung từ mép của footer */
+    display: flex;
+    /* Thiết lập hiển thị flexbox để quản lý layout */
+    justify-content: space-around;
+    /* Căn giữa các phần tử con và phân bố cân đối khoảng trắng xung quanh chúng */
+    flex-wrap: wrap;
+    /* không đủ sẽ xuống dòng*/
+}
+
+.footer .block {
+    width: 25%;
+    /* Chỉnh kích thước block về 100% trên điện thoại */
+    margin-bottom: 0px;
+    /* Tạo khoảng cách giữa các block */
+}
+
+.footer .block h3 {
+    border-bottom: 1px solid #777;
+    /* Đặt đường viền dưới cho tiêu đề h3 */
+    padding-bottom: 5px;
+    /* Khoảng cách giữa tiêu đề và phần còn lại của block */
+    color: #531006;
+    font-size: 1.7rem;
+}
+
+.footer .block p {
+    font-size: 1.4rem;
+    color: #531006;
+}
+
+.footer .block a {
+    display: block;
+    /*hiển thị dạng block để chiếm toàn bộ chiều rộng*/
+    font-size: 1.4rem;
+    color: #531006;
+    padding: 1rem 0;
+    /*khoảng trắng phía trên và dưới là 1rem, trái và phải là 0 */
+    text-decoration: none;
+    /*xoá gạch dưới ở liên kết*/
+}
+
+.footer .block a i {
+    color: #531006;
+}
+
+/*Đổi màu khi di chuột đến*/
+.footer .block a:hover {
+    color: brown;
+}
+
+/* Thêm media query cho màn hình có kích thước nhỏ */
+@media (max-width: 768px)
+/* Khi màn hình nhỏ hơn 768px, cần thiết lập lại chiều rộng của các block */
+    {
+    .footer .block {
+        width: 100%;
+        margin-bottom: 20;
+        /* Reset khoảng cách giữa các block */
+    }
+}
+
+/*----TRANG THÔNG TIN KHÁCH HÀNG -----*/
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.section__content {
+    position: relative;
+}
+
+.breadcrumb__wrap {
+    background-color: #f1e1e159; /*màu nền thanh cấu trúc site*/
+    padding: 1.125rem;
+    border-radius: 0.1875rem;
+}
+
+.breadcrumb__list {
+    list-style: none; /*xóa gạch đầu dòng danh sách*/
+    padding: 0;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.breadcrumb__list>li {
+    display: inline-block;
+}
+
+.breadcrumb__list>li>a {
+    color: brown;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.5s;
+    text-decoration: none; /*xóa gạch chân liên kết*/
+}
+
+.breadcrumb__list>li>a:hover {
+    color: #333333;
+}
+
+.breadcrumb__list>li.is-marked>a {
+    color: #333333;
+}
+
+/*định dạng phần tử sau mỗi list item*/
+.breadcrumb__list>li.has-separator:after { 
+    content: '/';  /*Thêm ký tự '/' vào cuối mỗi phần tử list item*/
+    margin: 0 18px; /* khoảng cách giữa dấu phân cách và phần tử liên kết*/
+}
+
+/* màu nền của các ô cột trái*/
+.dash__box--bg-white {
+    background-color: #f1e1e159;
+}
+
+/*viền ô*/
+.dash__box--border {
+    border: 1px solid #eee;
+}
+
+/*màu nền các ô thuộc QUẢN LÝ TÀI KHOẢN*/
+.dash__box--bg-grey {
+    background-color: #fbfbfb;
+}
+
+/*màu cho hiệu ứng bóng đổ*/
+.dash__box--shadow {
+    box-shadow: -2px 0px 14px 0 rgba(36, 37, 38, 0.08);
+}
+
+.dash__box--shadow-2 {
+    box-shadow: -6px 2px 8px 0 rgba(36, 37, 38, 0.08);
+}
+
+.dash__box--radius {
+    border-radius: 25px;
+}
+
+.dash__pad-1 {
+    padding: 26px 20px;
+}
+
+.dash__pad-2 {
+    padding: 24px;
+}
+
+.dash__pad-3 {
+    padding: 26px;
+}
+
+/*Ô 1 - CỘT TRÁI*/
+.dash__f-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dash__f-list>li {
+    padding: 4px 0;
+}
+
+.dash__f-list>li>a {
+    font-size: 17px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+.dash__f-list>li>a:hover {
+    color: #edb5cd;
+}
+.dash-active {
+    font-weight: 600;
+}
+
+/* Ô 2 - CỘT TRÁI*/
+.dash__w-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.dash__w-list>li {
+    border-bottom: 1px solid #edb5cd;
+}
+
+.dash__w-wrap {
+    padding: 18px 0;
+}
+
+/*icon*/
+.dash__w-icon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/*icon 1*/
+.dash__w-icon-style-1 {
+    background-color: #edb5cd;
+}
+
+.dash__w-icon-style-1>i {
+    color: #ff4500;
+}
+
+/*icon 2*/
+.dash__w-icon-style-2 {
+    background-color: brown;
+}
+
+.dash__w-icon-style-2>i {
+    color: burlywood;
+}
+
+/*icon 3*/
+.dash__w-icon-style-3 {
+    background-color: #3185fc24;
+}
+
+.dash__w-icon-style-3>i {
+    color: #3185FC;
+}
+
+.dash__w-text {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    color: #000000;
+}
+
+.dash__w-name {
+    display: block;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dash__h1 {
+    line-height: 1;
+    color: #9D5A4D;
+    font-size: 24px;
+}
+
+.dash__h2 {
+    line-height: 1;
+    font-size: 20px;
+    color: #9D5A4D;
+}
+
+.dash__text {
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+.dash__text-2 {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.dash__link>a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.5s linear;
+}
+
+.dash__link--brand>a {
+    color: #9D5A4D;
+}
+
+.dash__link--brand>a:hover {
+    color: #ed7399;
+}
+
+.dash__link--secondary>a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.dash__link--secondary>a:hover {
+    color: #ed7399;
+}
+
+.dash__link--black>a {
+    color: #000000;
+}
+
+.dash__table-wrap {
+    height: 400px;
+    overflow: auto;
+}
+
+/*BẢNG ĐƠN HÀNG GẦN ĐÂY*/
+.dash__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dash__table thead {
+    background-color: #F0D9D3;
+
+}
+
+.dash__table th,
+.dash__table td {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+}
+
+.dash__table th {
+    font-size: 16px;
+}
+
+.dash__table td {
+    font-size: 16px;
+}
+
+.dash__table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+/* Áp dụng màu xen kẽ cho các hàng chẵn */
+.dash__table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Áp dụng màu xen kẽ cho các hàng lẽ */
+.dash__table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.dash__table-img-wrap {
+    background-color: #f5f5f5;
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+.dash__table-img-wrap img {
+    display: block;
+    min-width: 40px;
+}
+
+.dash-edit-p {
+    width: 100%;
+}
+
+.dash-edit-p .btn,
+.dash-edit-p .input-text,
+.dash-edit-p .select-box {
+    border-radius: 6px;
+}
+
+.dash-edit-p .input-text {
+    width: 100%;
+}
+
+.dash-edit-p .btn {
+    font-weight: 600;
+    padding: 16px 46px;
+}
+
+.dash__custom-link {
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 13px;
+    border-radius: 6px;
+    width: 12rem;
+}
+
+.dash__table-img-wrap {
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+}
+
+.u-img-fluid {
+    text-align: center;
+}
+
+.col-lg-3, .col-lg-4
+.col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#dash-newsletter .modal-dialog {
+    width: 100%;
+    max-width: 450px;
+}
+
+#dash-newsletter .modal-body {
+    padding: 1.875rem;
+}
+
+#newsletter-modal .row {
+    align-items: center;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; /* giữ nguyên kích thước được xác định, bao gồm 
+     cả border và padding, và không làm thay đổi kích thước nội dung bên trong.*/
+}
+.u-s-m-b-30 {
+    margin-bottom: 1.875rem;
+}
+.u-h-100 {
+    height: 100%;
+}
+.row {
+    display: grid;
+    grid-template-columns: 200px auto 10px;
+    padding : 20px;
+    padding-left: 10px;
+    row-gap: 20px;
+}
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    justify-items: stretch; /*căn chỉnh theo chiều dọc */
+}
+.col-lg-4 {
+    flex: 0 0 calc(33.33% - 20px); /* Đảm bảo cột chiếm 1/3 chiều rộng với khoảng cách giữa các cột là 20px */
+    max-width: calc(33.33% - 20px);
+  }
+
+  @media (max-width: 768px){
+    .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -12px;
+            margin-left: -15px;
+        
+    }
+    .dash__text {
+        font-size: 12px;
+    }
+  }

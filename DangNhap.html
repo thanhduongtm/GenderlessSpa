@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+ <!--Link Font -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+ <!--Link css-->
+ <link rel="stylesheet" href="CSS/DangNhap.css">
+  <!--Link css header-->
+  <link rel="stylesheet" href="CSS/header.css">
+  <!--Link css footer-->
+  <link rel="stylesheet" href="CSS/footer.css">
+ <title>Đăng Nhập</title>
+</head>
+
+<body>
+      <!----------HEADER---------->
+      <section>
+        <header class="header">
+            <div class="header-logo">
+                <a href="TrangChu.html"> 
+                    <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html" target="_self">TRANG CHỦ</a>
+                <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+                <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+                <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+                <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+            </nav>
+            <div class="icon">
+                <div class="fas fa-bars" id="menu"></div>
+                <div class="fas fa-search" id="search"></div>
+                <a href="GioHang.html">
+                    <div class="fas fa-shopping-cart" id="cart"></div>
+                </a>
+                <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+            </div>
+            
+            <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+            <div class="login-options" id="loginOptions">
+                <a href="DangNhap.html">ĐĂNG NHẬP</a>
+                <a href="DangKy.html">ĐĂNG KÝ</a>
+                <a href="QuanTri.html">QUẢN TRỊ</a>
+            </div>
+            
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </header>
+    </section>
+    <!----------END HEADER---------->
+
+
+        <!--====== SECTION 2 ======-->
+        <div class="u-s-p-b-60">
+
+            <!--====== HEADER SECTION 2 ======-->
+            <div class="section__intro u-s-m-b-60">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section__text-wrap">
+                                <h1 class="section__heading u-c-secondary">BẠN ĐÃ CÓ TÀI KHOẢN?</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <!--====== Kết thúc - HEADER SECTION 2 ======-->
+
+
+            <!--====== NỘI DUNG SECTION 2 ======-->
+            <div class="section__content">
+                <div class="container">
+                    <div class="row row--center">
+                        <div class="dash__box dash__box--bg-white dash__box--shadow">
+                            <div class="col-lg-9 col-md-3 u-s-m-b-30">
+                                <div class="l-f-o">
+                                    <div class="l-f-o__pad-box">
+                                        <h1 class="gl-h1">ĐĂNG NHẬP</h1>
+
+                                        <span class="gl-text u-s-m-b-30">Nếu bạn đã có tài khoản, vui lòng đăng nhập
+                                            ngay.</span>
+                                        <form class="l-f-o__form">
+
+                                            <!---=== ĐĂNG NHẬP TÀI KHOẢN MẠNG XÃ HỘI ===-->
+                                            <div class="gl-s-api">
+
+                                                <!---=== FACEBOOK ===--->
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="gl-s-api__btn gl-s-api__btn--fb" type="button"><i
+                                                            class="fab fa-facebook-f"></i>
+
+                                                        <span>Đăng nhập với Facebook</span>
+                                                    </button>
+                                                </div>
+                                                <!---=== Kết thúc - FACEBOOK ===--->
+
+                                                <!---=== GOOGLE ===--->
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="gl-s-api__btn gl-s-api__btn--gplus" type="button"><i
+                                                            class="fab fa-google"></i>
+
+                                                        <span>Đăng nhập với Google</span>
+                                                    </button>
+                                                </div>
+                                                <!---=== Kết thúc - GOOGLE ===--->
+
+                                                <!---=== ỨNG DỤNG X ===--->
+                                                <div class="u-s-m-b-15">
+
+                                                    <button class="gl-s-api__btn gl-s-api__btn--x" type="button"><i
+                                                            class="fab fa-x-twitter"></i>
+
+                                                        <span>Đăng nhập với X</span>
+                                                    </button>
+                                                </div>
+                                                <!---=== Kết thúc - ỨNG DỤNG X ===--->
+                                            </div>
+                                            <!---=== Kết thúc - ĐĂNG NHẬP TÀI KHOẢN MẠNG XÃ HỘI ===-->
+
+                                            <!---=== ĐĂNG NHẬP TÀI KHOẢN CÓ TRƯỚC===-->
+                                            <div class="u-s-m-b-30">
+
+                                                <label class="gl-label" for="login-username">TÊN TÀI KHOẢN *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="login-email" placeholder="Nhập tên tài khoản">
+
+                                                <br><br>
+
+                                                <label class="gl-label" for="login-password">MẬT KHẨU *</label>
+
+                                                <input class="input-text input-text--primary-style" type="text"
+                                                    id="login-password" placeholder="Nhập mật khẩu"> <br><br>
+
+                                                <div class="gl-inline">
+                                                    <div class="u-s-m-b-30">
+
+                                                        <button class="btn btn--e-transparent-brand-b-2"
+                                                            type="submit">ĐĂNG NHẬP</button>
+                                                    </div>
+                                                    <div class="u-s-m-b-30">
+
+                                                        <a class="gl-link" href="lost-password.html">Quên mật khẩu?</a>
+                                                    </div>
+                                                </div>
+                                                <!---=== Kết thúc - ĐĂNG NHẬP TÀI KHOẢN CÓ TRƯỚC ===-->
+
+                                                <!--=========== Check Box ===========-->
+                                                <div class="check-box">
+
+                                                    <input type="checkbox" id="remember-me">
+                                                    <div class="check-box__state check-box__state--primary">
+
+                                                        <label class="check-box__label" for="remember-me">Nhớ tài khoản
+                                                            của tôi</label>
+                                                    </div>
+                                                </div>
+                                                <!--====== Kết thúc - Check Box ======-->
+                                            </div>
+                                        </form>
+                                        <h1 class="gl-h1">Bạn chưa có tài khoản ? </h1>
+
+                                        <div class="u-s-m-b-15">
+
+                                            <a class="l-f-o__create-link btn--e-transparent-brand-b-2"
+                                                href="DangKy.html">TẠO TÀI KHOẢN MỚI</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--====== Kết thúc - NỘI DUNG SECTION 2 ======-->
+            </div>
+        </div>
+        <!--====== Kết thúc - SECTION 2 ======-->
+    </div>
+    <!--====== Kết thúc - TRANG ĐĂNG NHẬP ======-->
+
+
+    <!-----FOOTER----->
+    <footer class="footer">
+        <div class="block">
+            <!--LOGO-->
+            <img width="100" src="./img/logo.png" alt="Logo">
+            <p>Genderless Spa - chuyên dịch vụ spa và các sản phẩm chăm sóc sắc đẹp tự nhiên.
+            </p>
+        </div>
+        <div class="block"> <!--LIÊN HỆ-->
+            <h3> LIÊN HỆ </h3>
+            <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản Đà,
+                Phường 11, Quận 5, Tp.HCM </a>
+            <a href="tel:0888 028 028"><i class="fas fa-phone"></i> 0888 028 028</a>
+            <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>
+        </div>
+        <div class="block"> <!--CHÍNH SÁCH-->
+            <h3> CHÍNH SÁCH </h3>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chính sách mua hàng</a>
+            <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
+        </div>
+    </footer>
+</body>
+<!--Link js header-->
+<script src="JS/header.js"></script>
+</html>

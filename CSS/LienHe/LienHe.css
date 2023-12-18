@@ -1,0 +1,189 @@
+body {
+    font-family: "Open Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    /*chuyển thành chữ hoa*/
+    letter-spacing: 1px;
+    color: #9D5A4D;
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+h2:after {
+    content: " ";
+    display: block;
+    width: 220px;
+    height: 1px;
+    background-color: #9D5A4D;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+body {
+    background-color: white;
+}
+
+.container h1 {
+    font-size: 40px;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+
+.container p {
+    text-align: left;
+}
+
+a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+}
+
+/*-----Chia 2 khối-----*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.khoitrai {
+    flex: 1 0 50%;
+    /*chiếm 50% trên màn hình lớn */
+    text-align: center;
+}
+
+.khoiphai {
+    flex: 1 0 50%;
+    /*chiếm 50% trên màn hình lớn */
+    text-align: center;
+}
+
+/*----------THÔNG TIN LIÊN HỆ----------*/
+.thongtin {
+    background: linear-gradient(to bottom, #f4e6e6 0%, rgba(106, 60, 60, 0));
+}
+
+.nd2 {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 150%;
+}
+
+body {
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    line-height: 1.80857;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+iframe {
+    margin-top: 20px;
+}
+
+p {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    color: #2d2d2d;
+}
+
+/* Đặt lịch ngay tittle */
+.titlepage h2 {
+    font-size: 30px;
+    color: #9D5A4D;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0;
+    display: inline-block;
+}
+
+.text_align_center {
+    text-align: center;
+}
+
+/** Form đặt lịch ngay  **/
+
+.appointment {
+    background: linear-gradient(to bottom, #f4e6e6 0%, rgba(106, 60, 60, 0));
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.appointment .titlepage {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main_form .form_control {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 55px;
+    background: rgb(186, 135, 120);
+    color: #d0d0cf;
+    font-size: 15px;
+    font-weight: normal;
+    border: inherit;
+    border-radius: 40px;
+}
+
+.main_form .textarea {
+    margin-bottom: 40px;
+    width: 100%;
+    background: rgb(186, 135, 120);
+    color: #d0d0cf !important;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 30px 25px 15px 25px;
+    border: inherit;
+    height: 75px;
+    border-radius: 40px;
+}
+
+.main_form .send_btn {
+    font-size: 14px;
+    transition: ease-in all 0.5s;
+    background-color: rgb(186, 135, 120);
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 200px;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    height: 61px;
+    line-height: 61px;
+    margin: 0 auto;
+    border-radius: 40px;
+}
+
+.main_form .send_btn:hover {
+    background-color: rgb(165, 42, 42);
+    transition: ease-in all 0.5s;
+    box-shadow: 0 0 16px 3px #635d5d38;
+    color: #fff;
+}
+
+#request *::placeholder {
+    color: #d0d0cf;
+    opacity: 1;
+}
+
+.datepicker-days {
+    padding: 20px;
+}
+
+/** end appointment  **/
