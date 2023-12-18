@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
@@ -24,56 +25,58 @@
     <link rel="stylesheet" href="CSS/CTSanPham/app.css"> <!--CSS CHÍNH-->
 
 </head>
+
 <body class="config">
     <div class="preloader is-active">
         <div class="preloader__wrap">
             <!--Ảnh hiện lên khi tải lại trang-->
-            <img class="preloader__img" src="IMAGE/logo_ngan.png" alt=""></div>
+            <img class="preloader__img" src="IMAGE/logo_ngan.png" alt="">
+        </div>
     </div>
 
     <!--====== Main App ======-->
     <div id="app">
-    
-      <!----------HEADER---------->
-    <section>
-        <header class="header">
-            <div class="header-logo">
-                <a href="TrangChu.html"> 
-                    <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
-                </a>
-            </div>
-            <nav class="navbar">
-                <a href="index.html" target="_self">TRANG CHỦ</a>
-                <a href="DichVu.html" target="_self">DỊCH VỤ</a>
-                <a href="SanPham.html" target="_self">SẢN PHẨM</a>
-                <a href="LienHe.html" target="_self">LIÊN HỆ</a>
-                <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
-            </nav>
-            <div class="icon">
-                <div class="fas fa-bars" id="menu"></div>
-                <div class="fas fa-search" id="search"></div>
-                <a href="GioHang.html">
-                    <div class="fas fa-shopping-cart" id="cart"></div>
-                </a>
-                <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
-            </div>
-            
-            <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
-            <div class="login-options" id="loginOptions">
-                <a href="DangNhap.html">ĐĂNG NHẬP</a>
-                <a href="DangKy.html">ĐĂNG KÝ</a>
-                <a href="QuanTri.html">QUẢN TRỊ</a>
-            </div>
-            
-            <form action="" class="search-form">
-                <input type="search" id="search-box" placeholder="Tìm kiếm...">
-                <label for="search-box" class="fas fa-search"></label>
-            </form>
-        </header>
-    </section>
-    <!----------END HEADER---------->
 
-<!-- =============================================================================================== -->
+        <!----------HEADER---------->
+        <section>
+            <header class="header">
+                <div class="header-logo">
+                    <a href="TrangChu.html">
+                        <img src="IMAGE/logo_ngan.png" width="100px" alt="Logo">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html" target="_self">TRANG CHỦ</a>
+                    <a href="DichVu.html" target="_self">DỊCH VỤ</a>
+                    <a href="SanPham.html" target="_self">SẢN PHẨM</a>
+                    <a href="LienHe.html" target="_self">LIÊN HỆ</a>
+                    <a href="TaiKhoan.html" target="_self">TÀI KHOẢN </a>
+                </nav>
+                <div class="icon">
+                    <div class="fas fa-bars" id="menu"></div>
+                    <div class="fas fa-search" id="search"></div>
+                    <a href="GioHang.html">
+                        <div class="fas fa-shopping-cart" id="cart"></div>
+                    </a>
+                    <div class="fas fa-user" id="login" onclick="showLoginOptions()"></div>
+                </div>
+
+                <!-- Mô-đun hiển thị lựa chọn đăng nhập -->
+                <div class="login-options" id="loginOptions">
+                    <a href="DangNhap.html">ĐĂNG NHẬP</a>
+                    <a href="DangKy.html">ĐĂNG KÝ</a>
+                    <a href="QuanTri.html">QUẢN TRỊ</a>
+                </div>
+
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="Tìm kiếm...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+            </header>
+        </section>
+        <!----------END HEADER---------->
+
+        <!-- =============================================================================================== -->
 
         <!--====== THÂN TRANG CHI TIẾT SẢN PHẨM ======-->
         <div class="app-content">
@@ -87,7 +90,7 @@
                             <!--====== ĐƯỜNG DẪN: TRANG CHỦ - SẢN PHẨM - TÊN SP ======-->
                             <div class="pd-breadcrumb u-s-m-b-30">
                                 <ul class="pd-breadcrumb__list">
-                                    
+
                                     <li class="has-separator">
                                         <a href="index.html">Trang chủ</a>
                                     </li> <!--Thay link trang chủ-->
@@ -95,9 +98,10 @@
                                     <li class="has-separator">
                                         <a href="SanPham.html">Sản phẩm</a>
                                     </li> <!--Thay link trang sp-->
-                                    
+
                                     <li class="is-marked"> <!--Thay link sp chi tiết này luôn-->
-                                        <a href="CTSanPham.html">Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing Masque 125ml</a>
+                                        <a href="CTSanPham.html">Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing
+                                            Masque 125ml</a>
                                     </li>
 
                                 </ul>
@@ -110,20 +114,34 @@
                                 <div class="slider-fouc pd-wrap">
 
                                     <div id="pd-o-initiate">
-                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg">
-                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg" data-zoom-image="images/product/mặt nạ đất sét k.jpg" alt=""></div>
-                                        
-                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/mặt nạ đất sét kmini.jpg">
-                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/kiehl.jpg" data-zoom-image="images/product/mặt nạ đất sét kmini.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap"
+                                            data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg">
+                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg"
+                                                data-zoom-image="images/product/mặt nạ đất sét k.jpg" alt="">
+                                        </div>
 
-                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg">
-                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg" data-zoom-image="images/product/mặt nạ đất sét k1.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/kiehl.jpg">
+                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/kiehl.jpg"
+                                                data-zoom-image="images/product/mặt nạ đất sét kmini.jpg" alt="">
+                                        </div>
 
-                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg">
-                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg" data-zoom-image="images/product/mặt nạ đất sét k3.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap"
+                                            data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg">
+                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg"
+                                                data-zoom-image="images/product/mặt nạ đất sét k1.jpg" alt="">
+                                        </div>
 
-                                        <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg">
-                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg" data-zoom-image="images/product/mặt nạ đất sét k4.jpg" alt=""></div>
+                                        <div class="pd-o-img-wrap"
+                                            data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg">
+                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg"
+                                                data-zoom-image="images/product/mặt nạ đất sét k3.jpg" alt="">
+                                        </div>
+
+                                        <div class="pd-o-img-wrap"
+                                            data-src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg">
+                                            <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg"
+                                                data-zoom-image="images/product/mặt nạ đất sét k4.jpg" alt="">
+                                        </div>
                                     </div>
 
                                     <span class="pd-text">Nhấn vào ảnh để phóng to</span>
@@ -133,21 +151,30 @@
                                     <div class="slider-fouc">
                                         <!--Hình thumbnail nhỏ bên dưới-->
                                         <div id="pd-o-thumbnail">
-                                            
+
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg" alt=""></div>
-                                            
+                                                <img class="u-img-fluid"
+                                                    src="IMAGE/CTSanPham/product/mặt nạ đất sét k.jpg" alt="">
+                                            </div>
+
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/kiehl.jpg" alt=""></div>
-                                            
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/kiehl.jpg" alt="">
+                                            </div>
+
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg" alt=""></div>
-                                            
+                                                <img class="u-img-fluid"
+                                                    src="IMAGE/CTSanPham/product/mặt nạ đất sét k1.jpg" alt="">
+                                            </div>
+
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg" alt=""></div>
-                                            
+                                                <img class="u-img-fluid"
+                                                    src="IMAGE/CTSanPham/product/mặt nạ đất sét k3.jpg" alt="">
+                                            </div>
+
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg" alt=""></div>
+                                                <img class="u-img-fluid"
+                                                    src="IMAGE/CTSanPham/product/mặt nạ đất sét k4.jpg" alt="">
+                                            </div>
                                         </div>
 
                                     </div>
@@ -161,7 +188,8 @@
                             <!--====== THÔNG TIN SP (PHẦN NẰM BÊN PHẢI) ======-->
                             <div class="pd-detail">
                                 <div> <!--Tên sp-->
-                                    <span class="pd-detail__name">Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing Masque 125ml</span>
+                                    <span class="pd-detail__name">Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing
+                                        Masque 125ml</span>
                                 </div>
 
                                 <div>
@@ -171,7 +199,8 @@
                                         <span class="pd-detail__price">950.000<sup>đ</sup></span>
 
                                         <span class="pd-detail__discount">(-10%)</span>
-                                        <del class="pd-detail__del">1.050.000đ</del> <!--thẻ DEL tạo đường gạch ngang giữa giá-->
+                                        <del class="pd-detail__del">1.050.000đ</del>
+                                        <!--thẻ DEL tạo đường gạch ngang giữa giá-->
                                     </div>
 
                                 </div>
@@ -183,11 +212,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        
+
                                         <span class="pd-detail__review u-s-m-l-4">
-                                            <a data-click-scroll="#view-review">2 đánh giá</a> <!--Nhấn vào số lượt đánh giá sẽ chạy xuống phần đánh giá của sp-->
+                                            <a data-click-scroll="#view-review">2 đánh giá</a>
+                                            <!--Nhấn vào số lượt đánh giá sẽ chạy xuống phần đánh giá của sp-->
                                         </span>
-                                    
+
                                     </div>
                                 </div>
 
@@ -196,28 +226,31 @@
 
                                         <span class="pd-detail__stock">Còn hàng</span>
 
-                                        <span class="pd-detail__left">Đã bán 10</span></div>
+                                        <span class="pd-detail__left">Đã bán 10</span>
+                                    </div>
                                 </div>
 
                                 <div class="u-s-m-b-15"> <!--Mô tả ngắn-->
-                                    <span class="pd-detail__preview-desc">Mặt nạ đất sét giúp làm sạch da, loại bỏ tạp chất và se khít lỗ chân lông.</span>
+                                    <span class="pd-detail__preview-desc">Mặt nạ đất sét giúp làm sạch da, loại bỏ tạp
+                                        chất và se khít lỗ chân lông.</span>
                                 </div>
 
                                 <div class="u-s-m-b-15"> <!--Thêm vào yêu thích-->
                                     <div class="pd-detail__inline">
                                         <span class="pd-detail__click-wrap">
                                             <i class="far fa-heart u-s-m-r-6"></i> <!--Ký hiệu trái tim của WISHLIST-->
-                                            <a href="#">Thêm vào yêu thích</a> <!--THAY BẰNG # VÌ KHÔNG CÓ TRANG WISHLIST-->
+                                            <a href="#">Thêm vào yêu thích</a>
+                                            <!--THAY BẰNG # VÌ KHÔNG CÓ TRANG WISHLIST-->
 
                                             <span class="pd-detail__click-count">(10)</span>
                                         </span>
-                                        
+
                                     </div>
                                 </div>
 
 
                                 <div class="u-s-m-b-15"> <!--Chia sẻ sp qua MXH-->
-                                    <ul class="pd-social-list"> 
+                                    <ul class="pd-social-list">
                                         <li>
                                             <p>Chia sẻ: </p>
                                         </li>
@@ -227,11 +260,13 @@
                                         </li>
 
                                         <li>
-                                            <a class="s-tw--color-hover" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                            <a class="s-tw--color-hover" href="#"><i
+                                                    class="fab fa-facebook-messenger"></i></a>
                                         </li>
 
                                         <li>
-                                            <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a>
+                                            <a class="s-insta--color-hover" href="#"><i
+                                                    class="fab fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -245,11 +280,15 @@
                                                 <!--====== ĐIỀU CHỈNH SỐ LƯỢNG ======-->
                                                 <div class="input-counter">
 
-                                                    <span class="input-counter__minus fas fa-minus"></span> <!-- Nút giảm số lượng -->
+                                                    <span class="input-counter__minus fas fa-minus"></span>
+                                                    <!-- Nút giảm số lượng -->
 
-                                                    <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="200"> <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 200 -->
+                                                    <input class="input-counter__text input-counter--text-primary-style"
+                                                        type="text" value="1" data-min="1" data-max="200">
+                                                    <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 200 -->
 
-                                                    <span class="input-counter__plus fas fa-plus"></span> <!-- Nút tăng số lượng -->
+                                                    <span class="input-counter__plus fas fa-plus"></span>
+                                                    <!-- Nút tăng số lượng -->
 
                                                 </div>
                                                 <!--====== KẾT THÚC - ĐIỀU CHỈNH SỐ LƯỢNG ======-->
@@ -306,21 +345,22 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="pd-tab">
-                                
+
                                 <!--TIÊU ĐỀ 3 MỤC MÔ TẢ - LƯU Ý KHI SỬ DỤNG - ĐÁNH GIÁ-->
                                 <div class="u-s-m-b-30">
                                     <ul class="nav pd-tab__list">
-                                        
+
                                         <li class="nav-item">
                                             <a class="nav-link" data-toggle="tab" href="#pd-desc">MÔ TẢ</a>
                                         </li>
-                                        
+
                                         <li class="nav-item">
                                             <a class="nav-link" data-toggle="tab" href="#pd-tag">LƯU Ý KHI SỬ DỤNG</a>
                                         </li>
-                                        
+
                                         <li class="nav-item">
-                                            <a class="nav-link active" id="view-review" data-toggle="tab" href="#pd-rev">ĐÁNH GIÁ <span>(2)</span></a>
+                                            <a class="nav-link active" id="view-review" data-toggle="tab"
+                                                href="#pd-rev">ĐÁNH GIÁ <span>(2)</span></a>
                                         </li>
 
                                     </ul>
@@ -332,26 +372,33 @@
                                     <div class="tab-pane" id="pd-desc">
                                         <div class="pd-tab__desc">
                                             <div class="u-s-m-b-15">
-                                                <p>Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing Masque có những đặc tính và công dụng sau:</p>
+                                                <p>Mặt Nạ Đất Sét Kiehl's Rare Earth Deep Pore Cleansing Masque có những
+                                                    đặc tính và công dụng sau:</p>
                                                 <ul>
                                                     <li>
-                                                        Mặt nạ đất sét Rare Earth Deep Pore Cleansing Masque được điều chế từ Đất Sét Trắng Amazon, giúp làm sạch da, se khít lỗ chân lông và cải thiện cấu trúc da
+                                                        Mặt nạ đất sét Rare Earth Deep Pore Cleansing Masque được điều
+                                                        chế từ Đất Sét Trắng Amazon, giúp làm sạch da, se khít lỗ chân
+                                                        lông và cải thiện cấu trúc da
                                                     </li>
 
                                                     <li>
-                                                        Sản phẩm giúp làm sạch da bằng cách tẩy tế bào chết loại bỏ tạp chất, kiềm dầu đồng thời giúp làn da mịn màng, tươi sáng                                                    
+                                                        Sản phẩm giúp làm sạch da bằng cách tẩy tế bào chết loại bỏ tạp
+                                                        chất, kiềm dầu đồng thời giúp làn da mịn màng, tươi sáng
                                                     </li>
 
                                                     <li>
-                                                        Làm giảm rõ rệt tình trạng bít tắc lỗ chân lông khi sử dụng mặt nạ thường xuyên - kết quả đã được chứng minh lâm sàng: -37% lỗ chân lông bít tắc ngay lập tức và -44% trong hai tuần                                                    
+                                                        Làm giảm rõ rệt tình trạng bít tắc lỗ chân lông khi sử dụng mặt
+                                                        nạ thường xuyên - kết quả đã được chứng minh lâm sàng: -37% lỗ
+                                                        chân lông bít tắc ngay lập tức và -44% trong hai tuần
                                                     </li>
-                                                    
+
                                                     <li>
                                                         Giảm 46% dầu thừa
                                                     </li>
 
                                                     <li>
-                                                        Dành cho mọi loại da (da thường , da khô , da dầu , da hỗn hợp, da mụn), kể cả da nhạy cảm                                                    
+                                                        Dành cho mọi loại da (da thường , da khô , da dầu , da hỗn hợp,
+                                                        da mụn), kể cả da nhạy cảm
                                                     </li>
                                                 </ul>
 
@@ -359,7 +406,12 @@
 
                                             <div class="u-s-m-b-15">
                                                 <h4>THÀNH PHẦN</h4>
-                                                <p>Aqua/Water , Kaolin , Bentonite , Propanediol , Glycerin , CI 77891/Titanium Dioxide , Caprylic/Capric Triglyceride , Cetearyl Alcohol , Zea Mays Starch/Corn Starch , Phenoxyethanol , Ceteareth-20 , Caprylyl Glycol , Xanthan Gum , Ethylhexylglycerin , Tocopherol , Lecithin , Aloe Barbadensis/Aloe Barbadensis Leaf Juice , Avena Sativa Flour/Oat Kernel Flour , Allantoin.</p>
+                                                <p>Aqua/Water , Kaolin , Bentonite , Propanediol , Glycerin , CI
+                                                    77891/Titanium Dioxide , Caprylic/Capric Triglyceride , Cetearyl
+                                                    Alcohol , Zea Mays Starch/Corn Starch , Phenoxyethanol ,
+                                                    Ceteareth-20 , Caprylyl Glycol , Xanthan Gum , Ethylhexylglycerin ,
+                                                    Tocopherol , Lecithin , Aloe Barbadensis/Aloe Barbadensis Leaf Juice
+                                                    , Avena Sativa Flour/Oat Kernel Flour , Allantoin.</p>
                                             </div>
 
                                         </div>
@@ -373,43 +425,48 @@
                                             <h2 class="u-s-m-b-15">LƯU Ý KHI SỬ DỤNG</h2>
                                             <div class="u-s-m-b-15">
 
-                                                <ol type = "1">
+                                                <ol type="1">
                                                     <li>
-                                                        Nếu các triệu chứng sau xảy ra sau khi sử dụng sản phẩm, ngừng sử dụng sản phẩm ngay và tham khảo ý kiến bác sĩ da liễu (việc sử dụng liên tục có thể làm trầm trọng thêm các triệu chứng):
+                                                        Nếu các triệu chứng sau xảy ra sau khi sử dụng sản phẩm, ngừng
+                                                        sử dụng sản phẩm ngay và tham khảo ý kiến bác sĩ da liễu (việc
+                                                        sử dụng liên tục có thể làm trầm trọng thêm các triệu chứng):
                                                     </li>
-                                                        <ol type="a">
-                                                            <li>
-                                                                Đốm đỏ, sưng tấy, ngứa, và các kích ứng da khác
-                                                            </li>
-                                                            <li>
-                                                                Nếu các triệu chứng trên xảy ra sau khi khu vực ứng dụng được phơi ra ánh sáng mặt trời trực tiếp
-                                                            </li>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Đốm đỏ, sưng tấy, ngứa, và các kích ứng da khác
+                                                        </li>
+                                                        <li>
+                                                            Nếu các triệu chứng trên xảy ra sau khi khu vực ứng dụng
+                                                            được phơi ra ánh sáng mặt trời trực tiếp
+                                                        </li>
 
-                                                        </ol>
-                                                    
+                                                    </ol>
+
                                                     <li>
-                                                        Không sử dụng trên vết thương hở, vùng da bị viêm, chàm bội nhiễm và các chứng mẩn da khác.
+                                                        Không sử dụng trên vết thương hở, vùng da bị viêm, chàm bội
+                                                        nhiễm và các chứng mẩn da khác.
                                                     </li>
 
                                                     <li>
                                                         Lưu trữ và bảo quản
                                                     </li>
-                                                        <ol type="a">
-                                                            <li>
-                                                                Đóng nắp sau mỗi lần sử dụng.
-                                                            </li>
+                                                    <ol type="a">
+                                                        <li>
+                                                            Đóng nắp sau mỗi lần sử dụng.
+                                                        </li>
 
-                                                            <li>
-                                                                Để ngoài tầm với của trẻ sơ sinh và trẻ nhỏ.
-                                                            </li>
+                                                        <li>
+                                                            Để ngoài tầm với của trẻ sơ sinh và trẻ nhỏ.
+                                                        </li>
 
-                                                            <li>
-                                                                Không lưu trữ ở nhiệt độ cực hoặc ở khu vực tiếp xúc trực tiếp với ánh sáng mặt trời.
-                                                            </li>
-                                                        </ol>
+                                                        <li>
+                                                            Không lưu trữ ở nhiệt độ cực hoặc ở khu vực tiếp xúc trực
+                                                            tiếp với ánh sáng mặt trời.
+                                                        </li>
+                                                    </ol>
 
                                                 </ol>
-                                            
+
                                             </div>
 
                                         </div>
@@ -445,12 +502,14 @@
                                                 <form class="pd-tab__rev-f1">
                                                     <div class="rev-f1__group">
 
-                                                        <div class="u-s-m-b-15"> 
+                                                        <div class="u-s-m-b-15">
                                                             <h2>2 Khách Hàng Đã Đánh Giá</h2>
                                                         </div>
-                                                        
+
                                                         <div class="u-s-m-b-15"> <!--Lọc đánh giá-->
-                                                            <label for="sort-review"></label><select class="select-box select-box--primary-style" id="sort-review">
+                                                            <label for="sort-review"></label><select
+                                                                class="select-box select-box--primary-style"
+                                                                id="sort-review">
                                                                 <option selected>Lọc: Đánh giá cao nhất</option>
                                                                 <option>Lọc: Đánh giá thấp nhất</option>
                                                             </select>
@@ -459,7 +518,8 @@
                                                     </div>
                                                     <div class="rev-f1__review">
                                                         <div class="review-o u-s-m-b-15">
-                                                            <div class="review-o__info u-s-m-b-8"> <!--Tên và ngày đánh giá của khách hàng 1-->
+                                                            <div class="review-o__info u-s-m-b-8">
+                                                                <!--Tên và ngày đánh giá của khách hàng 1-->
                                                                 <span class="review-o__name">Kim Thy</span>
                                                                 <span class="review-o__date">12/12/2023</span>
                                                             </div>
@@ -471,13 +531,19 @@
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
                                                             </div>
-        
 
-                                                            <p class="review-o__text">Chất mặt nạ dùng rất thích, sau khi đắp mặt nạ rồi rửa mặt, cảm giác da mềm mịn, mướt hơn hẳn. Dùng một khoảng thời gian thì lỗ chân lông được se khít, cải thiện đáng kể, vùng chữ T cũng được kiềm dầu khá tốt, giảm tình trạng lên mụn đáng kể. Nói chung sản phẩm rất đáng để mua.</p>
+
+                                                            <p class="review-o__text">Chất mặt nạ dùng rất thích, sau
+                                                                khi đắp mặt nạ rồi rửa mặt, cảm giác da mềm mịn, mướt
+                                                                hơn hẳn. Dùng một khoảng thời gian thì lỗ chân lông được
+                                                                se khít, cải thiện đáng kể, vùng chữ T cũng được kiềm
+                                                                dầu khá tốt, giảm tình trạng lên mụn đáng kể. Nói chung
+                                                                sản phẩm rất đáng để mua.</p>
                                                         </div>
 
                                                         <div class="review-o u-s-m-b-15">
-                                                            <div class="review-o__info u-s-m-b-8"> <!--Tên và ngày đánh giá của khách hàng 2-->
+                                                            <div class="review-o__info u-s-m-b-8">
+                                                                <!--Tên và ngày đánh giá của khách hàng 2-->
 
                                                                 <span class="review-o__name">Hải Yến</span>
                                                                 <span class="review-o__date">29/11/2023</span>
@@ -490,9 +556,15 @@
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
-                                                            </div>        
+                                                            </div>
 
-                                                            <p class="review-o__text">Khi sử dụng trên da sẽ có cảm giác ấm nhẹ, châm chích những vùng da mỏng vd như cánh mũi tầm khoảng 2, 3 phút đầu. Sau khi sử dụng, da được làm sạch dầu nhờn, thông thoáng lỗ chân lông, có khả năng giảm sưng tấy và gom còi mụn. Sản phẩm có khả năng đẩy mụn ẩn nên một số bạn khi dùng có dấu hiệu bị breakout. Trộm vía mình không sao.</p>
+                                                            <p class="review-o__text">Khi sử dụng trên da sẽ có cảm giác
+                                                                ấm nhẹ, châm chích những vùng da mỏng vd như cánh mũi
+                                                                tầm khoảng 2, 3 phút đầu. Sau khi sử dụng, da được làm
+                                                                sạch dầu nhờn, thông thoáng lỗ chân lông, có khả năng
+                                                                giảm sưng tấy và gom còi mụn. Sản phẩm có khả năng đẩy
+                                                                mụn ẩn nên một số bạn khi dùng có dấu hiệu bị breakout.
+                                                                Trộm vía mình không sao.</p>
                                                         </div>
 
                                                     </div>
@@ -504,37 +576,59 @@
 
                                                     <h2 class="u-s-m-b-15">Viết đánh giá</h2>
 
-                                                    <span class="gl-text u-s-m-b-15">Điền đầy đủ thông tin khi viết đánh giá</span>
+                                                    <span class="gl-text u-s-m-b-15">Điền đầy đủ thông tin khi viết đánh
+                                                        giá</span>
 
                                                     <div class="u-s-m-b-30">
                                                         <div class="rev-f2__table-wrap gl-scroll">
                                                             <table class="rev-f2__table">
-                                                                <thead> <!--====== TỪNG MỨC ĐÁNH GIÁ SAO PHẦN ĐÁNH GIÁ ======-->
+                                                                <thead>
+                                                                    <!--====== TỪNG MỨC ĐÁNH GIÁ SAO PHẦN ĐÁNH GIÁ ======-->
                                                                     <tr>
                                                                         <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i>
+                                                                            <div class="gl-rating-style-2"><i
+                                                                                    class="fas fa-star"></i>
 
-                                                                                <span>(1)</span></div>
+                                                                                <span>(1)</span>
+                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                            <div class="gl-rating-style-2"><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i>
 
-                                                                                <span>(2)</span></div>
+                                                                                <span>(2)</span>
+                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                            <div class="gl-rating-style-2"><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i>
 
-                                                                                <span>(3)</span></div>
+                                                                                <span>(3)</span>
+                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                            <div class="gl-rating-style-2"><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i>
 
-                                                                                <span>(4)</span></div>
+                                                                                <span>(4)</span>
+                                                                            </div>
                                                                         </th>
                                                                         <th>
-                                                                            <div class="gl-rating-style-2"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                                                            <div class="gl-rating-style-2"><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i><i
+                                                                                    class="fas fa-star"></i>
 
-                                                                                <span>(5)</span></div>
+                                                                                <span>(5)</span>
+                                                                            </div>
                                                                         </th>
                                                                     </tr>
                                                                 </thead>
@@ -545,10 +639,14 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-1" name="rating">
-                                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                                <input type="radio" id="star-1"
+                                                                                    name="rating">
+                                                                                <div
+                                                                                    class="radio-box__state radio-box__state--primary">
 
-                                                                                    <label class="radio-box__label" for="star-1"></label></div>
+                                                                                    <label class="radio-box__label"
+                                                                                        for="star-1"></label>
+                                                                                </div>
                                                                             </div>
                                                                             <!--====== End - Radio Box ======-->
                                                                         </td>
@@ -557,10 +655,14 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-2" name="rating">
-                                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                                <input type="radio" id="star-2"
+                                                                                    name="rating">
+                                                                                <div
+                                                                                    class="radio-box__state radio-box__state--primary">
 
-                                                                                    <label class="radio-box__label" for="star-2"></label></div>
+                                                                                    <label class="radio-box__label"
+                                                                                        for="star-2"></label>
+                                                                                </div>
                                                                             </div>
                                                                             <!--====== End - Radio Box ======-->
                                                                         </td>
@@ -569,10 +671,14 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-3" name="rating">
-                                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                                <input type="radio" id="star-3"
+                                                                                    name="rating">
+                                                                                <div
+                                                                                    class="radio-box__state radio-box__state--primary">
 
-                                                                                    <label class="radio-box__label" for="star-3"></label></div>
+                                                                                    <label class="radio-box__label"
+                                                                                        for="star-3"></label>
+                                                                                </div>
                                                                             </div>
                                                                             <!--====== End - Radio Box ======-->
                                                                         </td>
@@ -581,10 +687,14 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-4" name="rating">
-                                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                                <input type="radio" id="star-4"
+                                                                                    name="rating">
+                                                                                <div
+                                                                                    class="radio-box__state radio-box__state--primary">
 
-                                                                                    <label class="radio-box__label" for="star-4"></label></div>
+                                                                                    <label class="radio-box__label"
+                                                                                        for="star-4"></label>
+                                                                                </div>
                                                                             </div>
                                                                             <!--====== End - Radio Box ======-->
                                                                         </td>
@@ -593,10 +703,14 @@
                                                                             <!--====== Radio Box ======-->
                                                                             <div class="radio-box">
 
-                                                                                <input type="radio" id="star-5" name="rating">
-                                                                                <div class="radio-box__state radio-box__state--primary">
+                                                                                <input type="radio" id="star-5"
+                                                                                    name="rating">
+                                                                                <div
+                                                                                    class="radio-box__state radio-box__state--primary">
 
-                                                                                    <label class="radio-box__label" for="star-5"></label></div>
+                                                                                    <label class="radio-box__label"
+                                                                                        for="star-5"></label>
+                                                                                </div>
                                                                             </div>
                                                                             <!--====== End - Radio Box ======-->
                                                                         </td>
@@ -609,24 +723,30 @@
                                                     <div class="rev-f2__group">
                                                         <div class="u-s-m-b-15"> <!--Ô điền nhận xét-->
 
-                                                            <label class="gl-label" for="reviewer-text">Nhận xét của bạn<span style="color: red;">* </span>
-                                                            </label><textarea class="text-area text-area--primary-style" id="reviewer-text"></textarea>
+                                                            <label class="gl-label" for="reviewer-text">Nhận xét của
+                                                                bạn<span style="color: red;">* </span>
+                                                            </label><textarea class="text-area text-area--primary-style"
+                                                                id="reviewer-text"></textarea>
 
                                                         </div>
 
                                                         <div>
                                                             <p class="u-s-m-b-30"> <!--Ô điền tên-->
 
-                                                                <label class="gl-label" for="reviewer-name">Tên <span style="color: red;">*</span></label>
+                                                                <label class="gl-label" for="reviewer-name">Tên <span
+                                                                        style="color: red;">*</span></label>
 
-                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-name">
+                                                                <input class="input-text input-text--primary-style"
+                                                                    type="text" id="reviewer-name">
                                                             </p>
 
                                                             <p class="u-s-m-b-30"> <!--Ô điền email-->
 
-                                                                <label class="gl-label" for="reviewer-email">Email <span style="color: red;">*</span></label>
+                                                                <label class="gl-label" for="reviewer-email">Email <span
+                                                                        style="color: red;">*</span></label>
 
-                                                                <input class="input-text input-text--primary-style" type="text" id="reviewer-email">
+                                                                <input class="input-text input-text--primary-style"
+                                                                    type="text" id="reviewer-email">
                                                             </p>
 
                                                         </div>
@@ -634,7 +754,8 @@
                                                     </div>
 
                                                     <div> <!--Nút gửi đánh giá-->
-                                                        <button class="btn btn--e-brand-shadow" type="submit">GỬI ĐÁNH GIÁ</button>
+                                                        <button class="btn btn--e-brand-shadow" type="submit">GỬI ĐÁNH
+                                                            GIÁ</button>
                                                     </div>
 
                                                 </form>
@@ -653,7 +774,7 @@
             <!-- =============================================================================================== -->
 
             <!--====== SẢN PHẨM MUA CÙNG ======-->
-            <div class="u-s-p-b-90">  
+            <div class="u-s-p-b-90">
 
                 <div class="section__intro u-s-m-b-46">
                     <div class="container">
@@ -662,7 +783,8 @@
                                 <div class="section__text-wrap">
                                     <h1 class="section__heading u-c-secondary u-s-m-b-12">SẢN PHẨM MUA CÙNG</h1>
 
-                                    <span class="section__span u-c-grey">Khám phá thêm các sản phẩm hiệu quả để tối ưu hoá các bước làm đẹp của bạn.</span>
+                                    <span class="section__span u-c-grey">Khám phá thêm các sản phẩm hiệu quả để tối ưu
+                                        hoá các bước làm đẹp của bạn.</span>
                                 </div>
                             </div>
                         </div>
@@ -675,33 +797,46 @@
                 <div class="section__content">
                     <div class="container">
                         <div class="slider-fouc"> <!--Container chứa toàn bộ slider-->
-                            <div class="owl-carousel product-slider" data-item="4"> <!--Container của Owl Carousel, tạo slider hiển thị 4 sản phẩm mỗi lần-->
-                                
-                                <div class="u-s-m-b-30"> <!--Mỗi sản phẩm được đặt trong container này, với khoảng cách dưới cố định-->
-                                    <div class="product-o product-o--hover-on"> <!--Container định nghĩa mỗi sản phẩm và thêm hiệu ứng khi di chuột vào-->
-                                        
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của Bộ Dụng Cụ Trộn Đắp Mặt Nạ-->
+                            <div class="owl-carousel product-slider" data-item="4">
+                                <!--Container của Owl Carousel, tạo slider hiển thị 4 sản phẩm mỗi lần-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="SanPham.html"> <!--THAY BẰNG LINK TRANG CHI TIẾT SP ĐÓ-->
+                                <div class="u-s-m-b-30">
+                                    <!--Mỗi sản phẩm được đặt trong container này, với khoảng cách dưới cố định-->
+                                    <div class="product-o product-o--hover-on">
+                                        <!--Container định nghĩa mỗi sản phẩm và thêm hiệu ứng khi di chuột vào-->
+
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của Bộ Dụng Cụ Trộn Đắp Mặt Nạ-->
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="SanPham.html"> <!--THAY BẰNG LINK TRANG CHI TIẾT SP ĐÓ-->
                                                 <img class="aspect__img" src="IMAGE/CTSanPham/product/set.webp" alt="">
                                             </a>
 
                                             <div class="product-o__action-wrap">
-                                                <ul class="product-o__action-list"> <!--ICON XEM NHANH - THÊM VÀO GIỎ - YÊU THÍCH - THÔNG BÁO VÀ TOOLTIP KHI ĐƯA CHUỘT VÀO ICON-->
+                                                <ul class="product-o__action-list">
+                                                    <!--ICON XEM NHANH - THÊM VÀO GIỎ - YÊU THÍCH - THÔNG BÁO VÀ TOOLTIP KHI ĐƯA CHUỘT VÀO ICON-->
                                                     <li>
-                                                        <a data-modal="modal" data-modal-id="#quick-look-mc" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal" data-modal-id="#quick-look-mc"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -735,25 +870,39 @@
 
                                 <div class="u-s-m-b-30">
                                     <div class="product-o product-o--hover-on">
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của Cọ Quét Mặt Nạ Silicon Cao Cấp-->
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của Cọ Quét Mặt Nạ Silicon Cao Cấp-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="product-detail.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/quemn2.png" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/quemn2.png"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
 
-                                                        <a data-modal="modal" data-modal-id="#quick-look-mc" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a></li>
+                                                        <a data-modal="modal" data-modal-id="#quick-look-mc"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a></li>
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -784,27 +933,37 @@
 
                                 <div class="u-s-m-b-30">
                                     <div class="product-o product-o--hover-on">
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của Que Trộn Đắp Mặt Nạ-->
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của Que Trộn Đắp Mặt Nạ-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="CTSanPham.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="CTSanPham.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/phet1.png" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/phet1.png"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
-                                                        <a data-modal="modal" data-modal-id="#quick-look-mc" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal" data-modal-id="#quick-look-mc"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal" data-modal-id="#add-to-cart" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal" data-modal-id="#add-to-cart"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
 
                                                 </ul>
@@ -813,7 +972,7 @@
 
                                         <span class="product-o__category">
                                             <a href="SanPham.html">Sản phẩm</a>
-                                        </span> 
+                                        </span>
 
                                         <span class="product-o__name">
                                             <a href="CTSanPham.html">Que Trộn Đắp Mặt Nạ</a>
@@ -834,13 +993,13 @@
                                         </span>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--====== KẾT THÚC - NỘI DUNG SP LIÊN QUAN ======-->
-                
+
             </div>
             <!--====== KẾT THÚC - SẢN PHẨM MUA CÙNG ======-->
 
@@ -848,7 +1007,7 @@
 
             <!-- =============================================================================================== -->
             <!--====== SẢN PHẨM LIÊN QUAN ======-->
-            <div class="u-s-p-b-90">  
+            <div class="u-s-p-b-90">
 
                 <div class="section__intro u-s-m-b-46">
                     <div class="container">
@@ -870,33 +1029,46 @@
                 <div class="section__content">
                     <div class="container">
                         <div class="slider-fouc"> <!--Container chứa toàn bộ slider-->
-                            <div class="owl-carousel product-slider" data-item="4"> <!--Container của Owl Carousel, tạo slider hiển thị 4 sản phẩm mỗi lần-->
-                                
-                                <div class="u-s-m-b-30"> <!--Mỗi sản phẩm được đặt trong container này, với khoảng cách dưới cố định-->
-                                    <div class="product-o product-o--hover-on"> <!--Container định nghĩa mỗi sản phẩm và thêm hiệu ứng khi di chuột vào-->
-                                        
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của INNISFREE-->
+                            <div class="owl-carousel product-slider" data-item="4">
+                                <!--Container của Owl Carousel, tạo slider hiển thị 4 sản phẩm mỗi lần-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="CTSanPham.html"> <!--THAY BẰNG LINK TRANG CHI TIẾT SP ĐÓ-->
+                                <div class="u-s-m-b-30">
+                                    <!--Mỗi sản phẩm được đặt trong container này, với khoảng cách dưới cố định-->
+                                    <div class="product-o product-o--hover-on">
+                                        <!--Container định nghĩa mỗi sản phẩm và thêm hiệu ứng khi di chuột vào-->
+
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của INNISFREE-->
+
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="CTSanPham.html"> <!--THAY BẰNG LINK TRANG CHI TIẾT SP ĐÓ-->
                                                 <img class="aspect__img" src="IMAGE/CTSanPham/product/inni.webp" alt="">
                                             </a>
 
                                             <div class="product-o__action-wrap">
-                                                <ul class="product-o__action-list"> <!--ICON XEM NHANH - THÊM VÀO GIỎ - YÊU THÍCH - THÔNG BÁO VÀ TOOLTIP KHI ĐƯA CHUỘT VÀO ICON-->
+                                                <ul class="product-o__action-list">
+                                                    <!--ICON XEM NHANH - THÊM VÀO GIỎ - YÊU THÍCH - THÔNG BÁO VÀ TOOLTIP KHI ĐƯA CHUỘT VÀO ICON-->
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -908,7 +1080,8 @@
                                         </span>
 
                                         <span class="product-o__name">
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ Đá Tro Núi Lửa 100ml</a>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ
+                                                Đá Tro Núi Lửa 100ml</a>
                                         </span>
 
                                         <div class="product-o__rating gl-rating-style">
@@ -932,23 +1105,36 @@
                                     <div class="product-o product-o--hover-on">
                                         <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của REP-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="CTSanPham.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="CTSanPham.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/rep1.jpeg" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/rep1.jpeg"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
 
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a></li>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a></li>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a></li>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                    </li>
                                                     <li>
 
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a></li>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -959,7 +1145,8 @@
 
                                         <span class="product-o__name">
 
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Chiết Xuất Hoa Cúc Re:p Bio Fresh Mask With Real Calming Herbs 130g</a></span>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Chiết Xuất Hoa Cúc Re:p Bio Fresh
+                                                Mask With Real Calming Herbs 130g</a></span>
                                         <div class="product-o__rating gl-rating-style">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -979,27 +1166,37 @@
 
                                 <div class="u-s-m-b-30">
                                     <div class="product-o product-o--hover-on">
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của SOME BY MI-->
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của SOME BY MI-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="product-detail.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="product-detail.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/some.jpg" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/some.jpg"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
 
                                                 </ul>
@@ -1008,10 +1205,11 @@
 
                                         <span class="product-o__category">
                                             <a href="SanPham.html">Sản phẩm</a>
-                                        </span> 
+                                        </span>
 
                                         <span class="product-o__name">
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Trà Xanh Giúp Làm Sạch, Thu Nhỏ Lỗ Chân Lông Some By Mi 100g</a>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Trà Xanh Giúp Làm Sạch, Thu Nhỏ Lỗ
+                                                Chân Lông Some By Mi 100g</a>
                                         </span>
 
                                         <div class="product-o__rating gl-rating-style">
@@ -1032,27 +1230,37 @@
 
                                 <div class="u-s-m-b-30">
                                     <div class="product-o product-o--hover-on">
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của SKINTIFIC-->
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của SKINTIFIC-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="CTSanPham.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="CTSanPham.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/skintific.jpg" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/skintific.jpg"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
 
                                                 </ul>
@@ -1064,7 +1272,8 @@
                                         </span>
 
                                         <span class="product-o__name">
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Chiết Xuất Ngải Cứu Skintific Mugwort Anti Pores & Acne Clay Mask 55g</a>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Chiết Xuất Ngải Cứu Skintific
+                                                Mugwort Anti Pores & Acne Clay Mask 55g</a>
                                         </span>
 
                                         <div class="product-o__rating gl-rating-style">
@@ -1073,7 +1282,8 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star-half-alt"></i>
 
-                                            <span class="product-o__review">(6)</span></div>
+                                            <span class="product-o__review">(6)</span>
+                                        </div>
 
                                         <span class="product-o__price">141.000₫
                                             <span class="product-o__discount">202.000₫</span>
@@ -1084,27 +1294,37 @@
 
                                 <div class="u-s-m-b-30">
                                     <div class="product-o product-o--hover-on">
-                                        <div class="product-o__wrap"> <!--Container chứa toàn bộ nội dung của DR.CEURACLE-->
+                                        <div class="product-o__wrap">
+                                            <!--Container chứa toàn bộ nội dung của DR.CEURACLE-->
 
-                                            <a class="aspect aspect--bg-grey aspect--square u-d-block" href="CTSanPham.html">
+                                            <a class="aspect aspect--bg-grey aspect--square u-d-block"
+                                                href="CTSanPham.html">
 
-                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/Dr.Ceuracle.webp" alt=""></a>
+                                                <img class="aspect__img" src="IMAGE/CTSanPham/product/Dr.Ceuracle.webp"
+                                                    alt=""></a>
                                             <div class="product-o__action-wrap">
                                                 <ul class="product-o__action-list">
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq" data-tooltip="tooltip" data-placement="top" title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#quick-look-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Xem nhanh"><i class="fas fa-search-plus"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq" data-tooltip="tooltip" data-placement="top" title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
+                                                        <a data-modal="modal-lq" data-modal-id-lq="#add-to-cart-lq"
+                                                            data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào giỏ"><i class="fas fa-plus-circle"></i></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Thêm vào yêu thích"><i class="fas fa-heart"></i></a>
                                                     </li>
-                                                    
+
                                                     <li>
-                                                        <a href="#" data-tooltip="tooltip" data-placement="top" title="Nhận thông báo về sản phẩm"><i class="fas fa-envelope"></i></a>
+                                                        <a href="#" data-tooltip="tooltip" data-placement="top"
+                                                            title="Nhận thông báo về sản phẩm"><i
+                                                                class="fas fa-envelope"></i></a>
                                                     </li>
                                                 </ul>
 
@@ -1116,7 +1336,8 @@
                                         </span>
 
                                         <span class="product-o__name">
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Trà Xanh Dr.Ceuracle Jeju Matcha Clay Pack 115g</a>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Trà Xanh Dr.Ceuracle Jeju Matcha
+                                                Clay Pack 115g</a>
                                         </span>
 
                                         <div class="product-o__rating gl-rating-style">
@@ -1140,12 +1361,12 @@
                     </div>
                 </div>
                 <!--====== KẾT THÚC - NỘI DUNG SP LIÊN QUAN ======-->
-                
+
             </div>
             <!--====== KẾT THÚC - SẢN PHẨM LIÊN QUAN ======-->
 
             <!-- =============================================================================================== -->
-            
+
 
         </div>
         <!--====== KẾT THÚC - THÂN TRANG CHI TIẾT SẢN PHẨM ======-->
@@ -1161,23 +1382,24 @@
                 </p>
             </div>
             <div class="blockf"> <!--LIÊN HỆ-->
-                <h3> LIÊN HỆ </h3>
-                <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản Đà, Phường 11, Quận 5, Tp.HCM </a>
+                <h3> LIÊN HỆ </h3> <br>
+                <a href="https://maps.app.goo.gl/rUjSKGHEadA2bu7aA" target="_blank"> <i class="fas fa-map"></i> 86 Tản
+                    Đà, Phường 11, Quận 5, Tp.HCM </a>
                 <a href="tel:0888 028 028"><i class="fas fa-phone"></i> 0888 028 028</a>
-                <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>            
+                <a href="mailto:genderlessspa@gmail.com"><i class="fas fa-envelope"></i> genderlessspa@gmail.com</a>
             </div>
             <div class="blockf"> <!--CHÍNH SÁCH-->
-                <h3> CHÍNH SÁCH </h3>
+                <h3> CHÍNH SÁCH </h3> <br>
                 <a href="#"><i class="fas fa-chevron-right"></i> Chính sách bảo mật</a>
                 <a href="#"><i class="fas fa-chevron-right"></i> Chính sách mua hàng</a>
                 <a href="#"><i class="fas fa-chevron-right"></i> Chương trình khuyến mãi</a>
             </div>
         </footer>
-                <!--====== KẾT THÚC - FOOTER ======-->
-        
+        <!--====== KẾT THÚC - FOOTER ======-->
 
 
-<!-- =======================================    POP-UP QUICK LOOK VÀ THÊM VÀO GIỎ HÀNG   ============================================ -->
+
+        <!-- =======================================    POP-UP QUICK LOOK VÀ THÊM VÀO GIỎ HÀNG   ============================================ -->
 
         <!--====== POP-UP QUICK LOOK VÀ THÊM VÀO GIỎ HÀNG SẢN PHẨM MUA CÙNG ======-->
 
@@ -1214,47 +1436,53 @@
                                 <!--====== KẾT THÚC - ĐƯỜNG DẪN: TRANG CHỦ - SẢN PHẨM - TÊN SP TRONG PHẦN QUICK LOOK SẢN PHẨM MUA CÙNG ======-->
 
 
-                <!--======================= CHI TIẾT SẢN PHẨM MUA CÙNG TRONG QUICK LOOK  ================================-->
+                                <!--======================= CHI TIẾT SẢN PHẨM MUA CÙNG TRONG QUICK LOOK  ================================-->
 
                                 <!--====== HÌNH SẢN PHẨM MUA CÙNG TRONG PHẦN QUICK LOOK (PHẦN BÊN TRÁI)  ======-->
                                 <div class="pd u-s-m-b-30">
                                     <div class="pd-wrap">
                                         <div id="js-product-detail-modal"> <!--Hình SẢN PHẨM MUA CÙNG QUICK LOOK-->
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set1.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set2.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set3.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set4.webp" alt=""></div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/set.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set.webp" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/set.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set1.webp" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/set.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set2.webp" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/set.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set3.webp" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/set.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set4.webp" alt="">
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="u-s-m-t-15">
-                                        <div id="js-product-detail-modal-thumbnail"> <!--Hình thumnail SẢN PHẨM MUA CÙNG QUICK LOOK -->
+                                        <div id="js-product-detail-modal-thumbnail">
+                                            <!--Hình thumnail SẢN PHẨM MUA CÙNG QUICK LOOK -->
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set.webp" alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set1.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set1.webp" alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set2.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set2.webp" alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set3.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set3.webp" alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set4.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set4.webp" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1302,10 +1530,14 @@
                                     </div>
 
                                     <div class="u-s-m-b-15"> <!--Mô tả ngắn về SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
-                                        <span class="pd-detail__preview-desc">Bộ Dụng Cụ Trộn Đắp Mặt Nạ Bằng Nhựa Cao Cấp LMLTOP Mask Bowl là bộ dụng cụ đắp mặt nạ đến từ thương hiệu LMLTOP gồm muỗng đong, bát trộn và cọ phết mặt nạ, cọ tán bột giúp công việc pha hỗn hợp mặt nạ của bạn trở nên dễ dàng hơn.</span>
+                                        <span class="pd-detail__preview-desc">Bộ Dụng Cụ Trộn Đắp Mặt Nạ Bằng Nhựa Cao
+                                            Cấp LMLTOP Mask Bowl là bộ dụng cụ đắp mặt nạ đến từ thương hiệu LMLTOP gồm
+                                            muỗng đong, bát trộn và cọ phết mặt nạ, cọ tán bột giúp công việc pha hỗn
+                                            hợp mặt nạ của bạn trở nên dễ dàng hơn.</span>
                                     </div>
 
-                                    <div class="u-s-m-b-15"> <!--Thêm vào yêu thích SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
+                                    <div class="u-s-m-b-15">
+                                        <!--Thêm vào yêu thích SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
                                         <div class="pd-detail__inline">
 
                                             <span class="pd-detail__click-wrap">
@@ -1326,44 +1558,57 @@
                                             <li>
                                                 <p>Chia sẻ: </p>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a class="s-fb--color-hover" href="#"><i
+                                                        class="fab fa-facebook-f"></i></a>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                                <a class="s-tw--color-hover" href="#"><i
+                                                        class="fab fa-facebook-messenger"></i></a>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a>
-                                            </li>    
+                                                <a class="s-insta--color-hover" href="#"><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </li>
 
                                         </ul>
                                     </div>
 
-                                    <div class="u-s-m-b-15"> 
+                                    <div class="u-s-m-b-15">
                                         <form class="pd-detail__form">
-                                            <div class="pd-detail-inline-2"> <!-- Phần chọn số lượng và các nút thêm vào giỏ, mua ngay của SẢN PHẨM MUA CÙNG trong QUICK LOOK -->
-                                                <div class="u-s-m-b-15"> <!--Điều chỉnh số lượng SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
+                                            <div class="pd-detail-inline-2">
+                                                <!-- Phần chọn số lượng và các nút thêm vào giỏ, mua ngay của SẢN PHẨM MUA CÙNG trong QUICK LOOK -->
+                                                <div class="u-s-m-b-15">
+                                                    <!--Điều chỉnh số lượng SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
 
                                                     <!--====== ĐIỀU CHỈNH SỐ LƯỢNG SẢN PHẨM MUA CÙNG TRONG QUICK LOOK  ======-->
                                                     <div class="input-counter">
 
-                                                        <span class="input-counter__minus fas fa-minus"></span> <!-- Nút giảm số lượng -->
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+                                                        <!-- Nút giảm số lượng -->
 
-                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="100"> <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 100 -->
+                                                        <input
+                                                            class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="100">
+                                                        <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 100 -->
 
-                                                        <span class="input-counter__plus fas fa-plus"></span> <!-- Nút tăng số lượng -->
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                        <!-- Nút tăng số lượng -->
 
                                                     </div>
                                                     <!--====== KẾT THÚC - ĐIỀU CHỈNH SỐ LƯỢNG SẢN PHẨM MUA CÙNG TRONG QUICK LOOK  ======-->
                                                 </div>
 
-                                                <div class="u-s-m-b-15"> <!--Nút Thêm vào giỏ và nút Mua ngay SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
-                                                    <button class="btn btn--e-brand-b-2" type="submit">THÊM VÀO GIỎ</button> <br> <br> <br>
+                                                <div class="u-s-m-b-15">
+                                                    <!--Nút Thêm vào giỏ và nút Mua ngay SẢN PHẨM MUA CÙNG trong QUICK LOOK-->
+                                                    <button class="btn btn--e-brand-b-2" type="submit">THÊM VÀO
+                                                        GIỎ</button> <br> <br> <br>
                                                     <div class="u-s-m-b-15"> <!--====== MUA NGAY ======-->
-                                                        <a href="ThanhToan.html" class="btn btn--e-brand-b-2">MUA NGAY</a>
+                                                        <a href="ThanhToan.html" class="btn btn--e-brand-b-2">MUA
+                                                            NGAY</a>
                                                     </div>
                                                 </div>
 
@@ -1416,19 +1661,24 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
-                                <div class="success u-s-m-b-30"> <!--Thông tin của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ (PHẦN BÊN TRÁI)-->
-                                    <div class="success__text-wrap"> <!--Thông báo sp đã thêm vào giỏ hàng thành công trong SẢN PHẨM MUA CÙNG-->
+                                <div class="success u-s-m-b-30">
+                                    <!--Thông tin của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ (PHẦN BÊN TRÁI)-->
+                                    <div class="success__text-wrap">
+                                        <!--Thông báo sp đã thêm vào giỏ hàng thành công trong SẢN PHẨM MUA CÙNG-->
 
-                                        <i class="fas fa-check"></i> <!--Dấu tick trước Đã thêm vào giỏ hàng! trong SẢN PHẨM MUA CÙNG-->
+                                        <i class="fas fa-check"></i>
+                                        <!--Dấu tick trước Đã thêm vào giỏ hàng! trong SẢN PHẨM MUA CÙNG-->
 
                                         <span>Đã thêm vào giỏ hàng!</span>
                                     </div>
 
-                                    <div class="success__img-wrap"> <!--Hình đại diện của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ-->
+                                    <div class="success__img-wrap">
+                                        <!--Hình đại diện của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ-->
                                         <img class="u-img-fluid" src="IMAGE/CTSanPham/product/set.webp" alt="">
                                     </div>
 
-                                    <div class="success__info-wrap"> <!--Tên - Số lượng - Giá của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ-->
+                                    <div class="success__info-wrap">
+                                        <!--Tên - Số lượng - Giá của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ-->
 
                                         <span class="success__name">Bộ Dụng Cụ Trộn Đắp Mặt Nạ</span>
 
@@ -1442,16 +1692,20 @@
                             </div>
 
                             <div class="col-lg-6 col-md-12">
-                                <div class="s-option"> <!--Thông tin của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ (PHẦN BÊN PHẢI)-->
+                                <div class="s-option">
+                                    <!--Thông tin của SẢN PHẨM MUA CÙNG khi chọn thêm vào giỏ (PHẦN BÊN PHẢI)-->
 
 
                                     <div class="s-option__link-box">
 
-                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP TỤC MUA SẮM</a>
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal">TIẾP
+                                            TỤC MUA SẮM</a>
 
-                                        <a class="s-option__link btn--e-white-brand-shadow" href="GioHang.html">XEM GIỎ HÀNG</a>
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="GioHang.html">XEM GIỎ
+                                            HÀNG</a>
 
-                                        <a class="s-option__link btn--e-brand-shadow" href="ThanhToan.html">TIẾN HÀNH THANH TOÁN</a>
+                                        <a class="s-option__link btn--e-brand-shadow" href="ThanhToan.html">TIẾN HÀNH
+                                            THANH TOÁN</a>
 
                                     </div>
 
@@ -1463,7 +1717,7 @@
             </div>
         </div>
         <!--====== KẾT THÚC - THÊM VÀO GIỎ HÀNG TRONG SẢN PHẨM MUA CÙNG ======-->
-        
+
         <!--====== KẾT THÚC - POP-UP QUICK LOOK VÀ THÊM VÀO GIỎ HÀNG SẢN PHẨM MUA CÙNG ======-->
 
         <!--=============================================================================================================-->
@@ -1495,7 +1749,8 @@
                                         </li>
 
                                         <li class="is-marked">
-                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ Đá Tro Núi Lửa 100ml</a>
+                                            <a href="CTSanPham.html">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ
+                                                Đá Tro Núi Lửa 100ml</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1507,44 +1762,56 @@
                                 <div class="pd-lq u-s-m-b-30">
                                     <div class="pd-wrap-lq">
                                         <div id="js-product-detail-modal-lq"> <!--Hình sp Innisfree QUICK LOOK-->
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni-o-n.jpg" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni1.jpg" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni2.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni3.webp" alt=""></div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/inni.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni.webp" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/inni-o-n.jpg">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni-o-n.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/inni1.jpg">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni1.jpg" alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/inni2.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni2.webp"
+                                                    alt="">
+                                            </div>
+                                            <div class="pd-o-img-wrap" data-src="IMAGE/CTSanPham/product/inni3.webp">
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni3.webp"
+                                                    alt="">
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="u-s-m-t-15">
-                                        <div id="js-product-detail-modal-thumbnail-lq"> <!--Hình thumnail QUICK LOOK Innisfree-->
+                                        <div id="js-product-detail-modal-thumbnail-lq">
+                                            <!--Hình thumnail QUICK LOOK Innisfree-->
                                             <div>
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni.webp" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni-o-n.jpg" alt=""></div>
-                                            <div>
-
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni1.jpg" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni.webp" alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni2.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni-o-n.jpg"
+                                                    alt="">
+                                            </div>
                                             <div>
 
-                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni3.webp" alt=""></div>
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni1.jpg" alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni2.webp"
+                                                    alt="">
+                                            </div>
+                                            <div>
+
+                                                <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni3.webp"
+                                                    alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!--====== KẾT THÚC - HÌNH SP TRONG PHẦN QUICK LOOK (PHẦN BÊN TRÁI) ======-->
                             </div>
 
@@ -1553,7 +1820,8 @@
                                 <!--====== THÔNG TIN SP INNISFREE TRONG PHẦN QUICK LOOK (PHẦN NẰM BÊN PHẢI) ======-->
                                 <div class="pd-detail">
                                     <div>
-                                        <span class="pd-detail__name">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ Đá Tro Núi Lửa 100ml</span>
+                                        <span class="pd-detail__name">Mặt Nạ Đất Sét Innisfree Chăm Sóc Lỗ Chân Lông Từ
+                                            Đá Tro Núi Lửa 100ml</span>
                                     </div>
 
                                     <div>
@@ -1589,7 +1857,9 @@
                                     </div>
 
                                     <div class="u-s-m-b-15"> <!--Mô tả ngắn về sp Innisfree trong QUICK LOOK-->
-                                        <span class="pd-detail__preview-desc">Làm sạch tế bào chết, làm sạch bã nhờn, dầu thừa, làm sạch sâu và cải thiện vấn đề về lỗ chân lông, hỗ trợ làm sáng da và cải thiện độ đàn hồi da.</span>
+                                        <span class="pd-detail__preview-desc">Làm sạch tế bào chết, làm sạch bã nhờn,
+                                            dầu thừa, làm sạch sâu và cải thiện vấn đề về lỗ chân lông, hỗ trợ làm sáng
+                                            da và cải thiện độ đàn hồi da.</span>
                                     </div>
 
                                     <div class="u-s-m-b-15"> <!--Thêm vào yêu thích sp Innisfree trong QUICK LOOK-->
@@ -1613,44 +1883,57 @@
                                             <li>
                                                 <p>Chia sẻ: </p>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                                <a class="s-fb--color-hover" href="#"><i
+                                                        class="fab fa-facebook-f"></i></a>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-tw--color-hover" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                                                <a class="s-tw--color-hover" href="#"><i
+                                                        class="fab fa-facebook-messenger"></i></a>
                                             </li>
-    
+
                                             <li>
-                                                <a class="s-insta--color-hover" href="#"><i class="fab fa-instagram"></i></a>
-                                            </li>    
+                                                <a class="s-insta--color-hover" href="#"><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </li>
 
                                         </ul>
                                     </div>
 
-                                    <div class="u-s-m-b-15"> 
+                                    <div class="u-s-m-b-15">
                                         <form class="pd-detail__form">
-                                            <div class="pd-detail-inline-2"> <!-- Phần chọn số lượng và các nút thêm vào giỏ, mua ngay của sp Innisfree trong QUICK LOOK -->
-                                                <div class="u-s-m-b-15"> <!--Điều chỉnh số lượng sp Innisfree trong QUICK LOOK-->
+                                            <div class="pd-detail-inline-2">
+                                                <!-- Phần chọn số lượng và các nút thêm vào giỏ, mua ngay của sp Innisfree trong QUICK LOOK -->
+                                                <div class="u-s-m-b-15">
+                                                    <!--Điều chỉnh số lượng sp Innisfree trong QUICK LOOK-->
 
                                                     <!--====== ĐIỀU CHỈNH SỐ LƯỢNG TRONG QUICK LOOK ======-->
                                                     <div class="input-counter">
 
-                                                        <span class="input-counter__minus fas fa-minus"></span> <!-- Nút giảm số lượng -->
+                                                        <span class="input-counter__minus fas fa-minus"></span>
+                                                        <!-- Nút giảm số lượng -->
 
-                                                        <input class="input-counter__text input-counter--text-primary-style" type="text" value="1" data-min="1" data-max="100"> <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 100 -->
+                                                        <input
+                                                            class="input-counter__text input-counter--text-primary-style"
+                                                            type="text" value="1" data-min="1" data-max="100">
+                                                        <!-- Ô nhập số lượng, có giá trị nhỏ nhất là 1 và lớn nhất là 100 -->
 
-                                                        <span class="input-counter__plus fas fa-plus"></span> <!-- Nút tăng số lượng -->
+                                                        <span class="input-counter__plus fas fa-plus"></span>
+                                                        <!-- Nút tăng số lượng -->
 
                                                     </div>
                                                     <!--====== KẾT THÚC - ĐIỀU CHỈNH SỐ LƯỢNG TRONG QUICK LOOK ======-->
                                                 </div>
 
-                                                <div class="u-s-m-b-15"> <!--Nút Thêm vào giỏ và nút Mua ngay sp Innisfree trong QUICK LOOK-->
-                                                    <button class="btn btn--e-brand-b-2" type="submit">THÊM VÀO GIỎ</button> <br> <br> <br>
+                                                <div class="u-s-m-b-15">
+                                                    <!--Nút Thêm vào giỏ và nút Mua ngay sp Innisfree trong QUICK LOOK-->
+                                                    <button class="btn btn--e-brand-b-2" type="submit">THÊM VÀO
+                                                        GIỎ</button> <br> <br> <br>
                                                     <div class="u-s-m-b-15"> <!--====== MUA NGAY ======-->
-                                                        <a href="ThanhToan.html" class="btn btn--e-brand-b-2">MUA NGAY</a>
+                                                        <a href="ThanhToan.html" class="btn btn--e-brand-b-2">MUA
+                                                            NGAY</a>
                                                     </div>
                                                 </div>
 
@@ -1703,7 +1986,8 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
-                                <div class="success-lq u-s-m-b-30"> <!--Thông tin của sp Innisfree khi chọn thêm vào giỏ (PHẦN BÊN TRÁI)-->
+                                <div class="success-lq u-s-m-b-30">
+                                    <!--Thông tin của sp Innisfree khi chọn thêm vào giỏ (PHẦN BÊN TRÁI)-->
                                     <div class="success__text-wrap"> <!--Thông báo sp đã thêm vào giỏ hàng thành công-->
 
                                         <i class="fas fa-check"></i> <!--Dấu tick trước Đã thêm vào giỏ hàng!-->
@@ -1711,13 +1995,16 @@
                                         <span>Đã thêm vào giỏ hàng!</span>
                                     </div>
 
-                                    <div class="success__img-wrap"> <!--Hình đại diện của sp Innisfree khi chọn thêm vào giỏ-->
+                                    <div class="success__img-wrap">
+                                        <!--Hình đại diện của sp Innisfree khi chọn thêm vào giỏ-->
                                         <img class="u-img-fluid" src="IMAGE/CTSanPham/product/inni.webp" alt="">
                                     </div>
 
-                                    <div class="success__info-wrap"> <!--Tên - Số lượng - Giá của sp Innisfree khi chọn thêm vào giỏ-->
+                                    <div class="success__info-wrap">
+                                        <!--Tên - Số lượng - Giá của sp Innisfree khi chọn thêm vào giỏ-->
 
-                                        <span class="success__name">Mặt Nạ Đất Sét Chăm Sóc Lỗ Chân Lông Từ Đá Tro Núi Lửa Innisfree Super Volcanic Pore Clay Mask 100ml</span>
+                                        <span class="success__name">Mặt Nạ Đất Sét Chăm Sóc Lỗ Chân Lông Từ Đá Tro Núi
+                                            Lửa Innisfree Super Volcanic Pore Clay Mask 100ml</span>
 
                                         <span class="success__quantity">Số lượng: 1</span>
 
@@ -1729,15 +2016,19 @@
                             </div>
 
                             <div class="col-lg-6 col-md-12">
-                                <div class="s-option"> <!--Thông tin của sp Innisfree khi chọn thêm vào giỏ (PHẦN BÊN PHẢI)-->
+                                <div class="s-option">
+                                    <!--Thông tin của sp Innisfree khi chọn thêm vào giỏ (PHẦN BÊN PHẢI)-->
 
                                     <div class="s-option__link-box">
 
-                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal-lq">TIẾP TỤC MUA SẮM</a>
+                                        <a class="s-option__link btn--e-white-brand-shadow" data-dismiss="modal-lq">TIẾP
+                                            TỤC MUA SẮM</a>
 
-                                        <a class="s-option__link btn--e-white-brand-shadow" href="GioHang.html">XEM GIỎ HÀNG</a>
+                                        <a class="s-option__link btn--e-white-brand-shadow" href="GioHang.html">XEM GIỎ
+                                            HÀNG</a>
 
-                                        <a class="s-option__link btn--e-brand-shadow" href="ThanhToan.html">TIẾN HÀNH THANH TOÁN</a>
+                                        <a class="s-option__link btn--e-brand-shadow" href="ThanhToan.html">TIẾN HÀNH
+                                            THANH TOÁN</a>
 
                                     </div>
 
@@ -1751,11 +2042,11 @@
         <!--====== KẾT THÚC - THÊM VÀO GIỎ HÀNG TRONG SP LIÊN QUAN - INNISFREE ======-->
 
         <!--====== KẾT THÚC - POP-UP QUICK LOOK VÀ THÊM VÀO GIỎ HÀNG SẢN PHẨM LIÊN QUAN ======-->
-        
+
         <!--=============================================================================================================-->
 
 
-        
+
     </div>
     <!--====== KẾT THÚC - Main App ======-->
 
@@ -1800,4 +2091,5 @@
         </div>
     </noscript> -->
 </body>
+
 </html>
